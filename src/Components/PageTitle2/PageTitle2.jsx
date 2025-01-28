@@ -1,0 +1,21 @@
+
+
+const PageTitle2 = () => {
+  return (
+    <section className="bg-white py-[70px]">
+      <div className="mx-auto px-4 sm:container">
+        <div className="border-l-[5px] border-[#dd0429] pl-5">
+          <h2 className="mb-2 text-4xl font-semibold text-dark">
+          work showcase
+          </h2>
+          <p className="text-sm font-medium text-body-color dark:text-dark-6">
+          Showcasing innovative designs and dynamic projects crafted with precision and creativity
+          </p>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default PageTitle2;
+
