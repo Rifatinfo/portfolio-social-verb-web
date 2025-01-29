@@ -1,0 +1,63 @@
+[
+    {
+      "id": "1",
+      "thumbnail_url": "https://example.com/thumb1.jpg",
+      "video_link": "https://example.com/video1.mp4",
+      "title": "Epic Adventure Movie Trailer",
+      "editing_cast": {
+        "director": "John Doe",
+        "editor": "Jane Smith",
+        "cinematographer": "Robert Brown",
+        "sound_designer": "Alice Johnson",
+        "special_effects": ["CGI", "VFX", "3D Animation"]
+      },
+      "description": "An epic adventure awaits in this thrilling movie trailer, featuring stunning visuals and an immersive storyline.",
+      "category": "Movie Trailer",
+      "duration": "2m 30s",
+      "video_type": "Trailer",
+      "resolution": "1080p",
+      "aspect_ratio": "16:9",
+      "file_format": "MP4"
+    },
+    {
+      "id": "2",
+      "thumbnail_url": "https://example.com/thumb2.jpg",
+      "video_link": "https://example.com/video2.mp4",
+      "title": "Tech Review: Latest Smartphone 2025",
+      "editing_cast": {
+        "host": "Michael Lee",
+        "video_editor": "Sarah White",
+        "graphics_designer": "Tom Harris",
+        "script_writer": "Emily Davis"
+      },
+      "description": "A detailed review of the latest smartphone of 2025, covering features, performance, and camera quality.",
+      "category": "Technology Review",
+      "duration": "15m 45s",
+      "video_type": "Review",
+      "resolution": "4K",
+      "aspect_ratio": "16:9",
+      "file_format": "MP4",
+      "frame_rate": "60fps"
+    },
+    {
+      "id": "3",
+      "thumbnail_url": "https://example.com/thumb3.jpg",
+      "video_link": "https://example.com/video3.mp4",
+      "title": "Cooking Masterclass: Italian Pasta",
+      "editing_cast": {
+        "chef": "Sophia Martinez",
+        "video_editor": "James Wilson",
+        "food_stylist": "Linda Scott",
+        "sound_engineer": "David Thompson"
+      },
+      "description": "Join Chef Sophia as she walks you through the process of making authentic Italian pasta from scratch.",
+      "category": "Cooking & Food",
+      "duration": "25m 10s",
+      "video_type": "Tutorial",
+      "resolution": "1080p",
+      "aspect_ratio": "16:9",
+      "file_format": "MP4",
+      "frame_rate": "30fps"
+    }
+  ]
+  
