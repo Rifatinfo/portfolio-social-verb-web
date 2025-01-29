@@ -3,7 +3,7 @@ import { Play } from "lucide-react";
 const PlayButton = () => {
     return (
         <div>
-             <div className="z-10 absolute top-38 md:left-36 left-28">
+             <div className="z-10 absolute top-38 md:left-32 left-28">
       <motion.button
         whileHover={{ scale: 1.2 }}
         whileTap={{ scale: 0.9 }}

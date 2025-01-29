@@ -2,7 +2,7 @@
 import ReactPlayer from "react-player";
 import PlayButton from "./PlayButton";
 
-const Video = () => {
+const Video = ({singleItem}) => {
   return (
     <div>
         <div className="player-wrapper relative">
@@ -15,7 +15,7 @@ const Video = () => {
           <div className="w-full h-[400px] relative overflow-hidden">
              <PlayButton></PlayButton>
             <img
-              src="https://img.youtube.com/vi/fkIvmfqX-t0/maxresdefault.jpg"
+              src={singleItem.thumbnail_url}
               alt="Video Thumbnail"
               className="w-full h-full object-cover"
             />

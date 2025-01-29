@@ -2,8 +2,21 @@
 
 import { FiSend } from "react-icons/fi";
 import Video from "../Video/Video";
+import { useState } from "react";
+import { motion } from "framer-motion";
+const Portfolio = ({ loadData }) => {
 
-const Portfolio = () => {
+  const [AllProduct, setAllProduct] = useState(loadData);
+  const [productToShow, setProductToShow] = useState(6);
+
+  const loadMoreProducts = () => {
+    if (productToShow >= AllProduct.length) {
+      return;
+    } else {
+      setProductToShow(previousProductToShow => previousProductToShow + 6);
+    }
+  }
+
   return (
     <div className=" max-w-[1536px] mx-auto ">
       <div>
@@ -59,16 +72,19 @@ const Portfolio = () => {
           </div>
           <div className="w-full md:w-4/5 shadow-lg rounded-2xl">
             <div className="grid p-4 grid-cols-1 gap-3 md:grid-cols-3 md:grid-4">
-              <div className="card bg-base-100 shadow-sm">
-                <div>
-                    <Video></Video>
-                </div>
-                <div className="card-body">
-                  <h2 className="font-semibold text-xl text-center mb-2">3D Animation</h2>
-                  <div className="flex justify-center gap-4">
-                   <div>
-                   <button
-                           className={`
+              {
+                AllProduct.slice(0, productToShow).map(singleItem => <div key={singleItem.id}>
+                  <div className="card h-full flex flex-col bg-base-100 shadow-lg">
+                    <div className="">
+                      <Video singleItem={singleItem}></Video>
+                    </div>
+                    <div className="card-body ">
+                      <h2 className="font-semibold text-lg ">{singleItem.title}</h2>
+                      <p className="font-semibold  text-black"><span>Brand :</span> {singleItem.brand_name}</p>
+                      <div className="flex justify-center gap-4 h-full mt-2">
+                        <div>
+                          <button
+                            className={`
                              px-4 py-2 rounded-full 
                              flex items-center gap-2 
                              text-slate-500
@@ -79,14 +95,14 @@ const Portfolio = () => {
                              hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)]
                              hover:text-violet-500
                          `}
-                         >
-                           <FiSend />
-                           <span>Add To Cart</span>
-                   </button>
-                   </div>
-                   <div>
-                   <button
-                           className={`
+                          >
+                            <FiSend />
+                            <span>Add To Cart</span>
+                          </button>
+                        </div>
+                        <div>
+                          <button
+                            className={`
                              px-4 py-2 rounded-full 
                              flex items-center gap-2 
                              text-slate-500
@@ -97,53 +113,47 @@ const Portfolio = () => {
                              hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)]
                              hover:text-violet-500
                          `}
-                         >
-                           <FiSend />
-                           <span>Details</span>
-                   </button>
-                   </div>
+                          >
+                            <FiSend />
+                            <span>Details</span>
+                          </button>
+                        </div>
+                      </div>
+                    </div>
                   </div>
-                </div>
-              </div>
-              {/* <div className="card bg-base-100  shadow-sm">
-                <figure>
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Card Title</h2>
-                  <p>
-                    A card component has a figure, a body part, and inside body
-                    there are title and actions parts
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div>
-              <div className="card bg-base-100  shadow-sm">
-                <figure>
-                  <img
-                    src="https://img.daisyui.com/images/stock/photo-1606107557195-0e29a4b5b4aa.webp"
-                    alt="Shoes"
-                  />
-                </figure>
-                <div className="card-body">
-                  <h2 className="card-title">Card Title</h2>
-                  <p>
-                    A card component has a figure, a body part, and inside body
-                    there are title and actions parts
-                  </p>
-                  <div className="card-actions justify-end">
-                    <button className="btn btn-primary">Buy Now</button>
-                  </div>
-                </div>
-              </div> */}
+                </div>)
+              }
+            </div>
+
+            {/* show more button */}
+            {
+          productToShow < AllProduct.length && <div>
+            {/* showMore button  */}
+            <div className="text-center mt-4 mb-4">
+              <motion.button
+                className="relative group px-6 py-3 text-white font-semibold text-lg rounded-full 
+                 bg-[#DD0429] shadow-lg transition-all 
+                 hover:shadow-2xl hover:scale-105"
+                whileHover={{ scale: 1.1 }}
+                whileTap={{ scale: 0.95 }}
+                onClick={() => loadMoreProducts()}
+              >
+                <span className="relative z-10">Show More</span>
+
+                {/* Glowing Effect */}
+                <motion.div
+                  className="absolute inset-0 bg-[#DD0429] opacity-30 
+                   rounded-full blur-xl transition-opacity group-hover:opacity-50"
+                  animate={{ opacity: [0.3, 0.5, 0.3] }}
+                  transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
+                />
+              </motion.button>
             </div>
           </div>
+        }
+          </div>
         </div>
+        
       </div>
     </div>
   );
