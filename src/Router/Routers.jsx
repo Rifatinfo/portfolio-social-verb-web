@@ -4,6 +4,7 @@ import {
 import Roots from "../Main/Roots";
 import Home from "../Pages/Home/Home";
 import ErrorPage from "../Pages/Home/ErrorPage/ErrorPage";
+import VideoDetails from "../Pages/Home/VideoDetails/VideoDetails";
 
   const router = createBrowserRouter([
     {
@@ -16,6 +17,11 @@ import ErrorPage from "../Pages/Home/ErrorPage/ErrorPage";
           element: <Home></Home>,
           loader : () => fetch('../data.json')
         },
+        {
+            path:"video/:id",
+            element : <VideoDetails></VideoDetails>,
+            loader : () => fetch('../data.json')
+        }
       ],
     },
   ])

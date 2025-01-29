@@ -4,11 +4,10 @@ import { FiSend } from "react-icons/fi";
 import Video from "../Video/Video";
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "react-router-dom";
 const Portfolio = ({ loadData }) => {
-
   const [AllProduct, setAllProduct] = useState(loadData);
   const [productToShow, setProductToShow] = useState(6);
-
   const loadMoreProducts = () => {
     if (productToShow >= AllProduct.length) {
       return;
@@ -74,6 +73,7 @@ const Portfolio = ({ loadData }) => {
             <div className="grid p-4 grid-cols-1 gap-3 md:grid-cols-3 md:grid-4">
               {
                 AllProduct.slice(0, productToShow).map(singleItem => <div key={singleItem.id}>
+                  <Link to={`/video/${singleItem.id}`}>
                   <div className="card h-full flex flex-col bg-base-100 shadow-lg">
                     <div className="">
                       <Video singleItem={singleItem}></Video>
@@ -121,6 +121,7 @@ const Portfolio = ({ loadData }) => {
                       </div>
                     </div>
                   </div>
+                  </Link>
                 </div>)
               }
             </div>

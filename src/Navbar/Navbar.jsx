@@ -6,6 +6,7 @@ import { FaCartShopping } from "react-icons/fa6";
 
 // import logo from '../assets/Social_verb_logo.png';
 import logo1 from '../assets/social.svg';
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("Home");
@@ -20,7 +21,7 @@ const Navbar = () => {
       <nav className="fixed top-0 left-0 w-full shadow bg-white z-50">
         <div className="container mx-auto flex justify-between items-center px-6 py-4">
           {/* Logo */}
-          <img className=" h-[38px]" src={logo1} alt="" />
+         <Link to="/"> <img className=" h-[38px]" src={logo1} alt="" /></Link>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
@@ -28,8 +29,9 @@ const Navbar = () => {
               "Home",
               "Dashboard",
               "About",
-            ].map((menu) => (
-              <li
+            ].map((menu, idx) => (
+              <Link key={idx}>
+                  <li
                 key={menu}
                 className={`cursor-pointer transition-colors duration-300  ${
                   active === menu ? "text-[#dd0429] underline" : ""
@@ -38,6 +40,7 @@ const Navbar = () => {
               >
                 {menu}
               </li>
+              </Link>
             ))}
           </ul>
           <div className="hidden md:flex items-center gap-6 ">

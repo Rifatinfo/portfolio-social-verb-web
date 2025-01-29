@@ -1,8 +1,8 @@
 [
   {
     "id": "1",
-    "thumbnail_url": "https://img.youtube.com/vi/aZts7oAqRfU/maxresdefault.jpg",
-    "video_link": "https://example.com/video1.mp4",
+    "thumbnail_url": "https://img.youtube.com/vi/Oq_27I9IMvc/maxresdefault.jpg",
+    "video_link": "https://www.youtube.com/watch?v=nVTdukNJdtM",
     "title": "Epic Adventure",
     "brand_name": "CineMax Studios",
     "editing_cast": {
@@ -21,8 +21,8 @@
   },
   {
     "id": "2",
-    "thumbnail_url": "https://example.com/thumb2.jpg",
-    "video_link": "https://example.com/video2.mp4",
+    "thumbnail_url": "https://img.youtube.com/vi/DfGS21Xgdjw/hqdefault.jpg",
+    "video_link": "https://www.youtube.com/watch?v=DfGS21Xgdjw",
     "title": "Latest Smartphone 2025",
     "brand_name": "TechGuru Reviews",
     "editing_cast": {
@@ -42,8 +42,8 @@
   },
   {
     "id": "3",
-    "thumbnail_url": "https://example.com/thumb3.jpg",
-    "video_link": "https://example.com/video3.mp4",
+    "thumbnail_url": "https://img.youtube.com/vi/x0yab6GPxf4/hqdefault.jpg",
+    "video_link": "https://www.youtube.com/watch?v=x0yab6GPxf4",
     "title": "Italian Pasta",
     "brand_name": "Gourmet Academy",
     "editing_cast": {
@@ -63,8 +63,8 @@
   },
   {
     "id": "4",
-    "thumbnail_url": "https://example.com/thumb4.jpg",
-    "video_link": "https://example.com/video4.mp4",
+    "thumbnail_url": "https://img.youtube.com/vi/EsjqcfYHyoE/hqdefault.jpg",
+    "video_link": "https://www.youtube.com/watch?v=EsjqcfYHyoE",
     "title": "30 Days to Strength",
     "brand_name": "FitLife Channel",
     "editing_cast": {
@@ -83,8 +83,8 @@
   },
   {
     "id": "5",
-    "thumbnail_url": "https://example.com/thumb5.jpg",
-    "video_link": "https://example.com/video5.mp4",
+    "thumbnail_url": "https://img.youtube.com/vi/FWA3rrii_vc/hqdefault.jpg",
+    "video_link": "https://www.youtube.com/watch?v=FWA3rrii_vc",
     "title": "NASA's New Mission",
     "brand_name": "SpaceVision",
     "editing_cast": {
@@ -103,8 +103,8 @@
   },
   {
     "id": "6",
-    "thumbnail_url": "https://example.com/thumb6.jpg",
-    "video_link": "https://example.com/video6.mp4",
+    "thumbnail_url": "https://img.youtube.com/vi/vdrDiEWTTBg/hqdefault.jpg",
+    "video_link": "https://www.youtube.com/watch?v=n370FxfwJa8",
     "title": "Easy Wall Art",
     "brand_name": "Creative Hands",
     "editing_cast": {
