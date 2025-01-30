@@ -11,7 +11,7 @@ const TeamSection = () => {
         </div>
 
         {/* Right Side: Button */}
-        <div className="md:w-1/2 flex-1 mt-8 md:mt-0 flex justify-center md:justify-end">
+        <div className="md:w-1/2 flex-1 mt-2 mb-4 md:mt-0 flex justify-center md:justify-end">
           <Link to="/our-team">
             <button className="relative inline-block px-8 py-3 font-semibold hover:text-[#DD0429] text-white bg-[#DD0429] border-2 border-[#DD0429] rounded-lg group overflow-hidden">
               <span className="absolute inset-0 bg-white transform scale-x-0 group-hover:scale-x-100 transition duration-300 ease-out"></span>

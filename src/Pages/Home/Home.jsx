@@ -8,6 +8,7 @@ import BlogSection from "../../Components/BlogSection/BlogSection";
 import TeamSection from "../../Components/OurTeam/TeamSection";
 import Contact from "../Contact/Contact";
 import Testimonials from "../../Components/Testimonials/Testimonials";
+import ServicesCart from "../Service/ServicesCart";
 // import OurTeam from "../../Components/OurTeam/OurTeam";
 const Home = () => {
     const loadData = useLoaderData();
@@ -17,8 +18,9 @@ const Home = () => {
             <Slider></Slider>
             <PageTitle2></PageTitle2>
             <Portfolio loadData={loadData}></Portfolio>
-             <Counting></Counting>
+            <ServicesCart></ServicesCart>
             <OurClients></OurClients>
+             <Counting></Counting>
             <TeamSection></TeamSection>
             <Contact></Contact>
             <Testimonials></Testimonials>
