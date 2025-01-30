@@ -1,11 +1,12 @@
 import { FaLinkedin, FaTwitter, FaGithub, FaFacebook } from "react-icons/fa"; // Import required icons
+import TeamPageTitle from "./TeamPageTitle";
 
 const OurTeam = () => {
   const teamMembers = [
     {
       name: 'John Doe',
       role: 'CEO',
-      image: 'https://www.material-tailwind.com/img/avatar3.jpg',
+      image: 'https://socialverb.com/wp-content/uploads/2021/11/IMG_3879-1-288x326.jpg',
       socials: {
         linkedin: 'https://www.linkedin.com/in/johndoe',
         twitter: 'https://www.twitter.com/johndoe',
@@ -16,7 +17,7 @@ const OurTeam = () => {
     {
       name: 'Jane Smith',
       role: 'CTO',
-      image: 'https://www.material-tailwind.com/img/avatar3.jpg',
+      image: 'https://socialverb.com/wp-content/uploads/2021/11/pp-288x326.jpg',
       socials: {
         linkedin: 'https://www.linkedin.com/in/janesmith',
         twitter: 'https://www.twitter.com/janesmith',
@@ -27,7 +28,7 @@ const OurTeam = () => {
     {
       name: 'Alice Johnson',
       role: 'Lead Developer',
-      image: 'https://www.material-tailwind.com/img/avatar3.jpg',
+      image: 'https://socialverb.com/wp-content/uploads/2021/11/IMG_3876-288x326.png',
       socials: {
         linkedin: 'https://www.linkedin.com/in/alicejohnson',
         twitter: 'https://www.twitter.com/alicejohnson',
@@ -38,7 +39,84 @@ const OurTeam = () => {
     {
       name: 'Alice Johnson',
       role: 'Lead Developer',
-      image: 'https://www.material-tailwind.com/img/avatar3.jpg',
+      image: 'https://socialverb.com/wp-content/uploads/2021/11/IMG_3877-288x326.jpg',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/alicejohnson',
+        twitter: 'https://www.twitter.com/alicejohnson',
+        github: 'https://www.github.com/alicejohnson',
+        facebook: 'https://www.facebook.com/alicejohnson'
+      },
+    },
+    {
+      name: 'Alice Johnson',
+      role: 'Lead Developer',
+      image: 'https://socialverb.com/wp-content/uploads/2021/11/IMG_1057-288x326.jpg',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/alicejohnson',
+        twitter: 'https://www.twitter.com/alicejohnson',
+        github: 'https://www.github.com/alicejohnson',
+        facebook: 'https://www.facebook.com/alicejohnson'
+      },
+    },
+    {
+      name: 'Alice Johnson',
+      role: 'Lead Developer',
+      image: 'https://socialverb.com/wp-content/uploads/2021/11/DSC07072-288x326.jpg',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/alicejohnson',
+        twitter: 'https://www.twitter.com/alicejohnson',
+        github: 'https://www.github.com/alicejohnson',
+        facebook: 'https://www.facebook.com/alicejohnson'
+      },
+    },
+    {
+      name: 'Alice Johnson',
+      role: 'Lead Developer',
+      image: 'https://socialverb.com/wp-content/uploads/2021/11/IMG_1038-288x326.jpg',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/alicejohnson',
+        twitter: 'https://www.twitter.com/alicejohnson',
+        github: 'https://www.github.com/alicejohnson',
+        facebook: 'https://www.facebook.com/alicejohnson'
+      },
+    },
+    {
+      name: 'Alice Johnson',
+      role: 'Lead Developer',
+      image: 'https://socialverb.com/wp-content/uploads/2024/12/WhatsApp-Image-2024-12-30-at-2.13.29-PM-288x326.jpeg',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/alicejohnson',
+        twitter: 'https://www.twitter.com/alicejohnson',
+        github: 'https://www.github.com/alicejohnson',
+        facebook: 'https://www.facebook.com/alicejohnson'
+      },
+    },
+    {
+      name: 'Alice Johnson',
+      role: 'Lead Developer',
+      image: 'https://socialverb.com/wp-content/uploads/2024/12/IMG_1047-288x326.jpg',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/alicejohnson',
+        twitter: 'https://www.twitter.com/alicejohnson',
+        github: 'https://www.github.com/alicejohnson',
+        facebook: 'https://www.facebook.com/alicejohnson'
+      },
+    },
+    {
+      name: 'Alice Johnson',
+      role: 'Lead Developer',
+      image: 'https://socialverb.com/wp-content/uploads/2025/01/IMG_20241014_202442-288x326.jpg',
+      socials: {
+        linkedin: 'https://www.linkedin.com/in/alicejohnson',
+        twitter: 'https://www.twitter.com/alicejohnson',
+        github: 'https://www.github.com/alicejohnson',
+        facebook: 'https://www.facebook.com/alicejohnson'
+      },
+    },
+    {
+      name: 'Alice Johnson',
+      role: 'Lead Developer',
+      image: 'https://socialverb.com/wp-content/uploads/2021/11/IMG_1012-288x326.jpg',
       socials: {
         linkedin: 'https://www.linkedin.com/in/alicejohnson',
         twitter: 'https://www.twitter.com/alicejohnson',
@@ -56,10 +134,8 @@ const OurTeam = () => {
   };
 
   return (
-    <div className="team-section py-16 bg-gray-100 max-w-7xl mx-auto">
-      <h2 className="text-4xl font-bold text-center text-[#DD0429] mb-8 animate__animated animate__fadeIn">
-        Meet Our Team
-      </h2>
+    <div className="team-section py-16 max-w-7xl mx-auto">
+      <TeamPageTitle></TeamPageTitle>
       <div className="team-members grid grid-cols-1 gap-2 md:grid-cols-4">
         {teamMembers.map((member, index) => (
           <div

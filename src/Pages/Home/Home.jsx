@@ -5,6 +5,8 @@ import { useLoaderData } from 'react-router-dom';
 import OurClients from '../../Components/OurClients/OurClients';
 import Counting from '../../Components/Counting/Counting';
 import BlogSection from "../../Components/BlogSection/BlogSection";
+import TeamSection from "../../Components/OurTeam/TeamSection";
+import Contact from "../Contact/Contact";
 // import OurTeam from "../../Components/OurTeam/OurTeam";
 const Home = () => {
     const loadData = useLoaderData();
@@ -16,6 +18,8 @@ const Home = () => {
             <Portfolio loadData={loadData}></Portfolio>
              <Counting></Counting>
             <OurClients></OurClients>
+            <TeamSection></TeamSection>
+            <Contact></Contact>
             <BlogSection></BlogSection>
             {/* <OurTeam></OurTeam> */}
         </div>
