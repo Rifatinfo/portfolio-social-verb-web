@@ -64,7 +64,70 @@ const Portfolio = ({ loadData }) => {
                   style={{ zIndex: 0 }}
                 ></span>
                 <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                  CG
+                  CG Motion
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                  OVC
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                  TVC
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                   Documentary
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                   Event Video
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                   Video Explainer
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                   Illustration Video
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                  VFX Motion
                 </span>
               </button>
             </div>

@@ -27,8 +27,12 @@ const Navbar = () => {
           <ul className="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
             {[
               "Home",
-              "Dashboard",
+              "Service",
+              "portfolio",
               "About",
+              "Contact",
+              "Order",
+              "Dashboard",
             ].map((menu, idx) => (
               <Link key={idx}>
                   <li
@@ -73,8 +77,12 @@ const Navbar = () => {
           <ul className="flex flex-col items-center space-y-4 pt-10 text-gray-700 font-medium">
             {[
               "Home",
-              "Dashboard",
+              "Service",
+              "portfolio",
               "About",
+              "Contact",
+              "Order",
+              "Dashboard",
             ].map((menu) => (
               <li
                 key={menu}
