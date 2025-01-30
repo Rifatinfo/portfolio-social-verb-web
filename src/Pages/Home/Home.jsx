@@ -7,6 +7,7 @@ import Counting from '../../Components/Counting/Counting';
 import BlogSection from "../../Components/BlogSection/BlogSection";
 import TeamSection from "../../Components/OurTeam/TeamSection";
 import Contact from "../Contact/Contact";
+import Testimonials from "../../Components/Testimonials/Testimonials";
 // import OurTeam from "../../Components/OurTeam/OurTeam";
 const Home = () => {
     const loadData = useLoaderData();
@@ -20,6 +21,7 @@ const Home = () => {
             <OurClients></OurClients>
             <TeamSection></TeamSection>
             <Contact></Contact>
+            <Testimonials></Testimonials>
             <BlogSection></BlogSection>
             {/* <OurTeam></OurTeam> */}
         </div>
