@@ -1,15 +1,18 @@
+import { useContext } from "react";
 import ServiceTitle from "./ServiceTitle";
 import { motion } from "framer-motion";
+import { ScrollContext } from "../../../ScrollProvider";
 
 
 const ServicesCart = () => {
+  const { servicesRef } = useContext(ScrollContext);
   return (
-    <div>
+    <div ref={servicesRef}>
         {/* title */}
         <ServiceTitle></ServiceTitle>
-        <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 p-6">
+        <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 p-6">
       {/* Service Card 1 */}
-      <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+      <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <div className="p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Creative Concept & Execution</h2>
           <p className="text-gray-600 text-sm mb-4">
@@ -22,7 +25,7 @@ const ServicesCart = () => {
       </div>
 
       {/* Service Card 2 */}
-      <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+      <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <div className="p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Your Brand with Advertising Solutions</h2>
           <p className="text-gray-600 text-sm mb-4">
@@ -35,7 +38,7 @@ const ServicesCart = () => {
       </div>
 
       {/* Service Card 3 */}
-      <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+      <div className=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <div className="p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Video Production & Photography</h2>
           <p className="text-gray-600 text-sm mb-4">
@@ -48,7 +51,7 @@ const ServicesCart = () => {
       </div>
 
       {/* Service Card 4 */}
-      <div className="max-w-sm mx-auto bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+      <div className=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <div className="p-6">
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Design and Printing Solutions</h2>
           <p className="text-gray-600 text-sm mb-4">

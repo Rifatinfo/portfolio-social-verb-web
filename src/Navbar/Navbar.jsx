@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useContext, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import NeumorphismButton from "../Components/NeumorphismButton";
@@ -7,7 +7,10 @@ import { FaCartShopping } from "react-icons/fa6";
 // import logo from '../assets/Social_verb_logo.png';
 import logo1 from '../assets/social.svg';
 import { Link } from "react-router-dom";
+import { ScrollContext } from "../../ScrollProvider";
 const Navbar = () => {
+
+  const {servicesRef, scrollToSection } = useContext(ScrollContext);
   const [open, setOpen] = useState(false);
   const [active, setActive] = useState("Home");
 
@@ -40,7 +43,11 @@ const Navbar = () => {
                 className={`cursor-pointer transition-colors duration-300  ${
                   active === menu ? "text-[#dd0429] underline" : ""
                 }`}
-                onClick={() => handleMenuClick(menu)}
+                onClick={() => {
+                  handleMenuClick(menu);
+                  scrollToSection(servicesRef);
+                }}
+                
               >
                 {menu}
               </li>

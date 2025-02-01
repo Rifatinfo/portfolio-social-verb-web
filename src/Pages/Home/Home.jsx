@@ -9,16 +9,22 @@ import TeamSection from "../../Components/OurTeam/TeamSection";
 import Contact from "../Contact/Contact";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import ServicesCart from "../Service/ServicesCart";
+import { useContext } from "react";
+import { ScrollContext } from "../../../ScrollProvider";
 // import OurTeam from "../../Components/OurTeam/OurTeam";
+
 const Home = () => {
     const loadData = useLoaderData();
     console.log(loadData)
+
+    const { servicesRef } = useContext(ScrollContext);
+    
     return (
         <div>
             <Slider></Slider>
             <PageTitle2></PageTitle2>
             <Portfolio loadData={loadData}></Portfolio>
-            <ServicesCart></ServicesCart>
+            <ServicesCart ref={servicesRef}></ServicesCart>
             <OurClients></OurClients>
              <Counting></Counting>
             <TeamSection></TeamSection>
