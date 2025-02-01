@@ -1,13 +1,13 @@
-import { useContext } from "react";
+// import { useContext } from "react";
 import ServiceTitle from "./ServiceTitle";
 import { motion } from "framer-motion";
-import { ScrollContext } from "../../../ScrollProvider";
+// import { ScrollContext } from "../../../ScrollProvider";
 
 
 const ServicesCart = () => {
-  const { servicesRef } = useContext(ScrollContext);
+  // const { servicesRef } = useContext(ScrollContext);
   return (
-    <div ref={servicesRef}>
+    <div>
         {/* title */}
         <ServiceTitle></ServiceTitle>
         <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 p-6">

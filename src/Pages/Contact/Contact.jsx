@@ -1,10 +1,13 @@
+// import { useContext } from "react";
 import ContactTitle from "./ContactTitle";
+// import { ScrollContext } from "../../../ScrollProvider";
 
 
 const Contact = () => {
+    //  const {ContactRef} = useContext(ScrollContext);
     return (
         <div>
-            <section className="py-12 bg-gray-100 text-gray-900">
+            <section  className="py-12 bg-gray-100 text-gray-900">
                 <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
 
                     {/* Left Side - Contact Info */}

@@ -1,8 +1,11 @@
+import { useContext } from "react";
+import { ScrollContext } from "../../../ScrollProvider";
 
 
 const PageTitle2 = () => {
+  const {PortfolioRef} = useContext(ScrollContext);
   return (
-    <section className="bg-white py-[70px]">
+    <section ref={PortfolioRef} className="bg-white py-[70px]">
       <div className="mx-auto px-4 sm:container">
         <div className="border-l-[5px] border-[#dd0429] pl-5">
           <h2 className="mb-2 text-4xl font-semibold text-dark">

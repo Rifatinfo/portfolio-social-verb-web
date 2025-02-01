@@ -1,8 +1,11 @@
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { ScrollContext } from "../../../ScrollProvider";
 
 const TeamTitle = () => {
+  const {AboutRef} = useContext(ScrollContext); 
     return (
-        <div>
+        <div ref={AboutRef}>
             <motion.div
       className="mt-28 mb-10 text-start"
       initial={{ opacity: 0, y: 20 }}

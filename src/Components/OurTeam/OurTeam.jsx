@@ -1,6 +1,7 @@
 import { FaLinkedin, FaTwitter, FaGithub, FaFacebook } from "react-icons/fa"; // Import required icons
 import TeamPageTitle from "./TeamPageTitle";
 
+
 const OurTeam = () => {
   const teamMembers = [
     {

@@ -10,53 +10,29 @@ import { Link } from "react-router-dom";
 import { ScrollContext } from "../../ScrollProvider";
 const Navbar = () => {
 
-  const {servicesRef, scrollToSection } = useContext(ScrollContext);
+  const { servicesRef, scrollToSection, PortfolioRef, AboutRef, ContactRef , HomeRef} = useContext(ScrollContext);
   const [open, setOpen] = useState(false);
-  const [active, setActive] = useState("Home");
-
-  const handleMenuClick = (menu) => {
-    setActive(menu);
-    setOpen(false);
-  };
 
   return (
     <div className="bg-gray-100">
       <nav className="fixed top-0 left-0 w-full shadow bg-white z-50">
         <div className="container mx-auto flex justify-between items-center px-6 py-4">
           {/* Logo */}
-         <Link to="/"> <img className=" h-[38px]" src={logo1} alt="" /></Link>
+          <Link onClick={() => scrollToSection(HomeRef)}> <img className=" h-[38px]" src={logo1} alt="" /></Link>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
-            {[
-              "Home",
-              "Service",
-              "portfolio",
-              "About",
-              "Contact",
-              "Order",
-              "Dashboard",
-            ].map((menu, idx) => (
-              <Link key={idx}>
-                  <li
-                key={menu}
-                className={`cursor-pointer transition-colors duration-300  ${
-                  active === menu ? "text-[#dd0429] underline" : ""
-                }`}
-                onClick={() => {
-                  handleMenuClick(menu);
-                  scrollToSection(servicesRef);
-                }}
-                
-              >
-                {menu}
-              </li>
-              </Link>
-            ))}
+            <li onClick={() => scrollToSection(HomeRef)} className="cursor-pointer transition-colors duration-300">Home</li>
+            <li onClick={() => scrollToSection(servicesRef)} className="cursor-pointer transition-colors duration-300" >Service</li>
+            <li onClick={() => scrollToSection(PortfolioRef)} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
+            <li onClick={() => scrollToSection(AboutRef)} className="cursor-pointer transition-colors duration-300" >About</li>
+            <li onClick={() => scrollToSection(ContactRef)} className="cursor-pointer transition-colors duration-300" >Contact</li>
+            <li className="cursor-pointer transition-colors duration-300" >Order</li>
+            <li className="cursor-pointer transition-colors duration-300" >Dashboard</li>
           </ul>
           <div className="hidden md:flex items-center gap-6 ">
             <p className="text-xl visible"><FaCartShopping /></p>
-           <NeumorphismButton></NeumorphismButton>
+            <NeumorphismButton></NeumorphismButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -68,7 +44,7 @@ const Navbar = () => {
             {open ? <IoClose className="text-3xl" /> : <IoMenu className="text-3xl" />}
           </div>
         </div>
-        
+
 
         {/* Mobile Menu */}
         <div
@@ -82,27 +58,15 @@ const Navbar = () => {
             />
           </div>
           <ul className="flex flex-col items-center space-y-4 pt-10 text-gray-700 font-medium">
-            {[
-              "Home",
-              "Service",
-              "portfolio",
-              "About",
-              "Contact",
-              "Order",
-              "Dashboard",
-            ].map((menu) => (
-              <li
-                key={menu}
-                className={` cursor-pointer transition-colors duration-300  ${
-                  active === menu ? "text-[#dd0429] " : ""
-                }`}
-                onClick={() => handleMenuClick(menu)}
-              >
-                {menu}
-              </li>
-            ))}
+            <li className="cursor-pointer transition-colors duration-300" >Home</li>
+            <li onClick={() => { scrollToSection(servicesRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Service</li>
+            <li onClick={() => { scrollToSection(PortfolioRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
+            <li onClick={() => { scrollToSection(AboutRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >About</li>
+            <li onClick={() => { scrollToSection(ContactRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Contact</li>
+            <li className="cursor-pointer transition-colors duration-300" >Order</li>
+            <li className="cursor-pointer transition-colors duration-300" >Dashboard</li>
             <div>
-               <NeumorphismButton></NeumorphismButton>
+              <NeumorphismButton></NeumorphismButton>
             </div>
           </ul>
         </div>

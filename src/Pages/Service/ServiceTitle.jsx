@@ -1,9 +1,12 @@
 import { motion } from "framer-motion";
+import { useContext } from "react";
+import { ScrollContext } from "../../../ScrollProvider";
 
 const ServiceTitle = () => {
+   const { servicesRef } = useContext(ScrollContext);
     return (
-        <div>
-             <motion.div
+        <div >
+             <motion.div ref={servicesRef}
       className="text-center mt-20 mb-10"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}

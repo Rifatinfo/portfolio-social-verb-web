@@ -5,6 +5,7 @@ import Video from "../Video/Video";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
+import PageTitle2 from "../PageTitle2/PageTitle2";
 const Portfolio = ({ loadData }) => {
   const [AllProduct, setAllProduct] = useState(loadData);
   const [productToShow, setProductToShow] = useState(6);
@@ -19,6 +20,7 @@ const Portfolio = ({ loadData }) => {
   return (
     <div className=" max-w-[1536px] mx-auto ">
       <div>
+      <PageTitle2></PageTitle2>
         <div className="grid grid-cols-1 gap-2 md:flex md:gap-4">
           <div className="w-full p-4 md:w-1/5  shadow-lg rounded-lg">
             <div className="md:grid md:grid-cols-1 md:gap-4 md:ml-8 grid grid-cols-2 gap-2">
