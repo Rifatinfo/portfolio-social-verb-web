@@ -24,7 +24,7 @@ import OurTeam from "../Components/OurTeam/OurTeam";
             loader : () => fetch('../data.json')
         },
         {
-            path : "our-team",
+            path : "/our-team",
             element : <OurTeam></OurTeam>
         }
       ],

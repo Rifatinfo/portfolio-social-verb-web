@@ -1,4 +1,4 @@
-import Slider from "../../Components/Slider/Slider";
+// import Slider from "../../Components/Slider/Slider";
 import Portfolio from '../../Components/Portfolio/Portfolio';
 import { useLoaderData } from 'react-router-dom';
 import OurClients from '../../Components/OurClients/OurClients';
@@ -11,6 +11,7 @@ import ServicesCart from "../Service/ServicesCart";
 import { useContext } from "react";
 import { ScrollContext } from "../../../ScrollProvider";
 import AboutAndTeam from "../../Components/AboutAndTeam/AboutAndTeam";
+import HomePageVideo from '../../Components/HomePageVideo/HomePageVideo';
 // import { useContext } from "react";
 // import { ScrollContext } from "../../../ScrollProvider";
 // import OurTeam from "../../Components/OurTeam/OurTeam";
@@ -24,7 +25,8 @@ const Home = () => {
     
     return (
         <div ref={HomeRef}>
-            <Slider></Slider>
+            {/* <Slider></Slider> */}
+            <HomePageVideo></HomePageVideo>
             <Portfolio loadData={loadData}></Portfolio>
             <ServicesCart></ServicesCart>
             <OurClients></OurClients>

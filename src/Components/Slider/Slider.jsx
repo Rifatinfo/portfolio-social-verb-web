@@ -19,7 +19,7 @@ const Slider = () => {
                             <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border-2 rounded dark:border-gray-800">Get Started</a>
                         </div>
                     </div>
-                    <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128">
+                    <div className="flex items-center justify-center p-6 mt-8 lg:mt-0 h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128 border-2">
                         <img src="https://mambaui.com/assets/svg/Business_SVG.svg" alt="" className="object-contain h-72 sm:h-80 lg:h-96 xl:h-112 2xl:h-128" />
                     </div>
                 </div>
