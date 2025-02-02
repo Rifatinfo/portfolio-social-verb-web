@@ -4,7 +4,7 @@ import { useLoaderData } from 'react-router-dom';
 import OurClients from '../../Components/OurClients/OurClients';
 import Counting from '../../Components/Counting/Counting';
 import BlogSection from "../../Components/BlogSection/BlogSection";
-import TeamSection from "../../Components/OurTeam/TeamSection";
+// import TeamSection from "../../Components/OurTeam/TeamSection";
 import Contact from "../Contact/Contact";
 import Testimonials from "../../Components/Testimonials/Testimonials";
 import ServicesCart from "../Service/ServicesCart";
@@ -30,7 +30,7 @@ const Home = () => {
             <OurClients></OurClients>
              <Counting></Counting>
              <AboutAndTeam></AboutAndTeam>
-            <TeamSection></TeamSection>
+            {/* <TeamSection></TeamSection> */}
             <Contact></Contact>
             <Testimonials></Testimonials>
             <BlogSection></BlogSection>

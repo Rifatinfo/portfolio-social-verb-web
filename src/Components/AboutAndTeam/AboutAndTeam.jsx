@@ -1,6 +1,7 @@
 
 import { useEffect, useState } from "react";
 import { motion } from "framer-motion";
+import { Link } from "lucide-react";
 const AboutAndTeam = () => {
     const [isVisible, setIsVisible] = useState(false);
 
@@ -10,7 +11,7 @@ const AboutAndTeam = () => {
     return (
         <div className="max-w-7xl mx-auto">
             {/* about */}
-            <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12 bg-gray-100">
+            <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12 ">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : -50 }}
@@ -43,7 +44,7 @@ const AboutAndTeam = () => {
                 </motion.div>
             </div>
             {/* Team */}
-            <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12 bg-gray-100">
+            <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12">
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 50 }}
@@ -69,10 +70,12 @@ const AboutAndTeam = () => {
                     </p>
 
                     {/* Learn More Button */}
+                    <Link to="/our-team">
                     <button className="mt-6 text-[#DD0429] font-semibold text-lg relative group">
                         Learn More About Our Team
                         <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#DD0429] transition-all duration-300 group-hover:w-full"></span>
                     </button>
+                    </Link>
                 </motion.div>
             </div>
         </div>

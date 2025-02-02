@@ -1,5 +1,4 @@
 import TestimonialTitle from "./TestimonialTitle";
-
 const Testimonials = () => {
     return (
         <div>
@@ -20,6 +19,8 @@ const Testimonials = () => {
                                 <div className="w-full h-full max-w-5xl mx-auto rounded-3xl opacity-30 blur-lg filter" style={{ background: "linear-gradient(90deg, #44ff9a -0.55%, #44b0ff 22.86%, #8b44ff 48.36%, #ff6644 73.33%, #ebff70 99.34%)" }}></div>
                             </div>
 
+
+                           {/* cart */}
                             <div className="relative grid max-w-lg grid-cols-1 gap-6 mx-auto md:max-w-none lg:gap-10 md:grid-cols-3">
                                 {/* Testimonial 1 */}
                                 <div className="flex flex-col overflow-hidden shadow-xl transform transition-all hover:scale-105 duration-300">
@@ -75,7 +76,7 @@ const Testimonials = () => {
                                     </div>
                                 </div>
 
-                                {/* Add more testimonials if needed */}
+                                {/* Testimonial 2  */}
                                 <div className="flex flex-col overflow-hidden shadow-xl transform transition-all hover:scale-105 duration-300">
                                     <div className="flex flex-col justify-between flex-1 p-6 bg-white lg:py-8 lg:px-7">
                                         <div className="flex-1">
