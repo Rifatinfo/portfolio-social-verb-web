@@ -6,6 +6,7 @@ import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import PageTitle2 from "../PageTitle2/PageTitle2";
+import PlayButton from "../Video/PlayButton";
 const Portfolio = ({ loadData }) => {
   const [AllProduct, setAllProduct] = useState(loadData);
   const [productToShow, setProductToShow] = useState(6);
@@ -139,53 +140,23 @@ const Portfolio = ({ loadData }) => {
               {
                 AllProduct.slice(0, productToShow).map(singleItem => <div key={singleItem.id}>
                   <Link to={`/video/${singleItem.id}`}>
-                  <div className="card h-full flex flex-col bg-base-100 shadow-lg">
-                    <div className="">
-                      <Video singleItem={singleItem}></Video>
-                    </div>
-                    <div className="card-body ">
-                      <h2 className="font-semibold text-lg ">{singleItem.title}</h2>
-                      <p className="font-semibold  text-black"><span>Brand :</span> {singleItem.brand_name}</p>
-                      <div className="flex justify-center gap-4 h-full mt-2">
-                        <div>
-                          <button
-                            className={`
-                             px-4 py-2 rounded-full 
-                             flex items-center gap-2 
-                             text-slate-500
-                             shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)]
-                             
-                             transition-all
-                     
-                             hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)]
-                             hover:text-violet-500
-                         `}
-                          >
-                            <FiSend />
-                            <span>Add To Cart</span>
-                          </button>
+                  <div>
+                            <div className="relative">
+                            <figure className=" w-[307] h-[174px]">
+                                <img 
+                                className="rounded-2xl"
+                                src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
+                                alt="Shoes" />
+                            </figure>
+                            <div>
+                                <p className="text-lg font-semibold">A card component has  </p>
+                                <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
+                            </div>
+                            </div>
+
+                            {/* play button */}
+                            <PlayButton></PlayButton>
                         </div>
-                        <div>
-                          <button
-                            className={`
-                             px-4 py-2 rounded-full 
-                             flex items-center gap-2 
-                             text-slate-500
-                             shadow-[-5px_-5px_10px_rgba(255,_255,_255,_0.8),_5px_5px_10px_rgba(0,_0,_0,_0.25)]
-                             
-                             transition-all
-                     
-                             hover:shadow-[-1px_-1px_5px_rgba(255,_255,_255,_0.6),_1px_1px_5px_rgba(0,_0,_0,_0.3),inset_-2px_-2px_5px_rgba(255,_255,_255,_1),inset_2px_2px_4px_rgba(0,_0,_0,_0.3)]
-                             hover:text-violet-500
-                         `}
-                          >
-                            <FiSend />
-                            <span>Details</span>
-                          </button>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
                   </Link>
                 </div>)
               }
