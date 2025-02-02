@@ -14,6 +14,9 @@ const ServicesCart = () => {
       {/* Service Card 1 */}
       <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <div className="p-6">
+          <div className="mb-6">
+            <img className="mx-auto" src="https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2018/10/service-icon-1-1.png" alt="" />
+          </div>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Creative Concept & Execution</h2>
           <p className="text-gray-600 text-sm mb-4">
             Crafting unique and effective concepts to drive your brand's success.
@@ -27,6 +30,9 @@ const ServicesCart = () => {
       {/* Service Card 2 */}
       <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <div className="p-6">
+          <div className="mb-6">
+            <img className="mx-auto" src="https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2018/10/service-icon-2-1.png" alt="" />
+          </div>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Your Brand with Advertising Solutions</h2>
           <p className="text-gray-600 text-sm mb-4">
             Leverage the power of social media to grow your brand and engage with audiences.
@@ -40,6 +46,9 @@ const ServicesCart = () => {
       {/* Service Card 3 */}
       <div className=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <div className="p-6">
+        <div className="mb-6">
+            <img className="mx-auto" src="https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2018/10/service-icon-3-1.png" alt="" />
+          </div>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Video Production & Photography</h2>
           <p className="text-gray-600 text-sm mb-4">
             Improve your website's ranking with our targeted SEO strategies.
@@ -53,6 +62,9 @@ const ServicesCart = () => {
       {/* Service Card 4 */}
       <div className=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <div className="p-6">
+        <div className="mb-6">
+            <img className="mx-auto" src="https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2018/10/service-icon-4.png" alt="" />
+          </div>
           <h2 className="text-2xl font-semibold text-gray-800 mb-4">Design and Printing Solutions</h2>
           <p className="text-gray-600 text-sm mb-4">
             Create beautiful, responsive websites that drive customer engagement.
@@ -62,6 +74,20 @@ const ServicesCart = () => {
           </a>
         </div>
       </div>
+      {/* <div className=" bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
+        <div className="p-6">
+        <div className="mb-6">
+            <img className="mx-auto" src="https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2018/10/service-icon-5.png" alt="" />
+          </div>
+          <h2 className="text-2xl font-semibold text-gray-800 mb-4">Design and Printing Solutions</h2>
+          <p className="text-gray-600 text-sm mb-4">
+            Create beautiful, responsive websites that drive customer engagement.
+          </p>
+          <a href="#more" className="text-[#DD0429] hover:text-[#B8021E] font-semibold underline">
+            See More
+          </a>
+        </div>
+      </div> */}
         </div>
 
         {/* see more details button */}

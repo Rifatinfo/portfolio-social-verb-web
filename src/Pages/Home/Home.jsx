@@ -10,6 +10,7 @@ import Testimonials from "../../Components/Testimonials/Testimonials";
 import ServicesCart from "../Service/ServicesCart";
 import { useContext } from "react";
 import { ScrollContext } from "../../../ScrollProvider";
+import AboutAndTeam from "../../Components/AboutAndTeam/AboutAndTeam";
 // import { useContext } from "react";
 // import { ScrollContext } from "../../../ScrollProvider";
 // import OurTeam from "../../Components/OurTeam/OurTeam";
@@ -28,6 +29,7 @@ const Home = () => {
             <ServicesCart></ServicesCart>
             <OurClients></OurClients>
              <Counting></Counting>
+             <AboutAndTeam></AboutAndTeam>
             <TeamSection></TeamSection>
             <Contact></Contact>
             <Testimonials></Testimonials>
