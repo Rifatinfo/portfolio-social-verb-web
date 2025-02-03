@@ -27,7 +27,7 @@ const Navbar = () => {
             <li onClick={() => scrollToSection(servicesRef)} className="cursor-pointer transition-colors duration-300" >Service</li>
             <li onClick={() => scrollToSection(PortfolioRef)} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
             <li onClick={() => scrollToSection(ContactRef)} className="cursor-pointer transition-colors duration-300" >Contact</li>
-            <li className="cursor-pointer transition-colors duration-300" >Service Status</li>
+            <li className="cursor-pointer transition-colors duration-300" >Status</li>
           </ul>
           <div className="hidden md:flex items-center gap-6 ">
             {/* <p className="text-xl visible"><FaCartShopping /></p> */}
@@ -62,8 +62,8 @@ const Navbar = () => {
             <li onClick={() => { scrollToSection(servicesRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Service</li>
             <li onClick={() => { scrollToSection(PortfolioRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
             <li onClick={() => { scrollToSection(ContactRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Contact</li>
-            <li className="cursor-pointer transition-colors duration-300" >Service Status</li>
-            <div>
+            <li className="cursor-pointer transition-colors duration-300" >Status</li>
+            <div className="md:ml-[3px]">
               <NeumorphismButton></NeumorphismButton>
             </div>
           </ul>

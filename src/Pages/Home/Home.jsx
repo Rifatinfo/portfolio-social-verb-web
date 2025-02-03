@@ -12,6 +12,7 @@ import { useContext } from "react";
 import { ScrollContext } from "../../../ScrollProvider";
 import AboutAndTeam from "../../Components/AboutAndTeam/AboutAndTeam";
 import HomePageVideo from '../../Components/HomePageVideo/HomePageVideo';
+import Cart from '../Service/cart';
 // import { useContext } from "react";
 // import { ScrollContext } from "../../../ScrollProvider";
 // import OurTeam from "../../Components/OurTeam/OurTeam";
@@ -29,6 +30,7 @@ const Home = () => {
             <HomePageVideo></HomePageVideo>
             <Portfolio loadData={loadData}></Portfolio>
             <ServicesCart></ServicesCart>
+             <Cart></Cart>
             <OurClients></OurClients>
              <Counting></Counting>
              <AboutAndTeam></AboutAndTeam>
