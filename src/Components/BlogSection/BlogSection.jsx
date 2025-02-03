@@ -35,7 +35,7 @@ const blogs = [
 export default function BlogSection() {
   return (
     <section className=" text-gray-800">
-      <div className="container p-6 mx-auto space-y-8">
+      <div className="md:max-w-7xl  md:mx-auto border space-y-8">
          <BlogSectionTitle></BlogSectionTitle>
         <div className="grid grid-cols-1 gap-6 md:grid-cols-2 lg:grid-cols-4">
           {blogs.map((blog) => (

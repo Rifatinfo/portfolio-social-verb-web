@@ -14,8 +14,8 @@ import ClientsSection from '../ClientsSection/ClientsSection'
 
 const OurClients = () => {
     return (
-        <div className='max-w-6xl mx-auto mb-8'>
-            <div className='mt-28 mb-2'>
+        <div className='max-w-7xl mx-auto mb-8 border'>
+            <div className='mt-20 mb-2'>
                 {/* <h1 className='text-center text-3xl font-bold md:text-3xl lg:text-4xl'>Our Clients</h1> */}
                 <ClientsSection></ClientsSection>
             </div>

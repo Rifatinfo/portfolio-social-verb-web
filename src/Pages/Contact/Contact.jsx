@@ -7,11 +7,11 @@ const Contact = () => {
     //  const {ContactRef} = useContext(ScrollContext);
     return (
         <div>
-            <section  className="py-12 bg-gray-100 text-gray-900">
-                <div className="grid max-w-6xl grid-cols-1 px-6 mx-auto lg:px-8 md:grid-cols-2 md:divide-x">
+            <section  className="py-12 bg-gray-100 text-gray-900 ">
+                <div className="grid max-w-7xl grid-cols-1 mx-auto  md:grid-cols-2 md:divide-x border">
 
                     {/* Left Side - Contact Info */}
-                    <div className="py-6 md:py-0 md:px-6 animate__animated animate__fadeInLeft">
+                    <div className="py-6 md:py-0  animate__animated animate__fadeInLeft">
                         {/* <h1 className="text-4xl font-bold text-[#DD0429] animate__animated animate__fadeInDown">
                            
                         </h1> */}

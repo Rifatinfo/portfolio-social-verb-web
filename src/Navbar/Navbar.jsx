@@ -4,7 +4,7 @@ import { IoClose } from "react-icons/io5";
 import NeumorphismButton from "../Components/NeumorphismButton";
 
 // import logo from '../assets/Social_verb_logo.png';
-import logo1 from '../assets/social.svg';
+// import logo1 from '../assets/social.svg';
 import { Link } from "react-router-dom";
 import { ScrollContext } from "../../ScrollProvider";
 const Navbar = () => {
@@ -13,12 +13,14 @@ const Navbar = () => {
   const [open, setOpen] = useState(false);
 
   return (
-    <div className="bg-gray-100">
+    <div className="bg-gray-100 ">
       <nav className="fixed top-0 left-0 w-full shadow bg-white z-50">
-        <div className="md:max-w-7xl md:mx-auto">
+        <div className="md:max-w-7xl md:mx-auto border">
         <div className="flex justify-between items-center  py-4">
           {/* Logo */}
-          <Link onClick={() => scrollToSection(HomeRef)}> <img className=" h-[38px]" src={logo1} alt="" /></Link>
+          <div className="border">
+          <Link onClick={() => scrollToSection(HomeRef)}><p>Social Verb</p></Link>
+          </div>
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
@@ -63,7 +65,7 @@ const Navbar = () => {
             <li onClick={() => { scrollToSection(PortfolioRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
             <li onClick={() => { scrollToSection(ContactRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Contact</li>
             <li className="cursor-pointer transition-colors duration-300" >Status</li>
-            <div className="md:ml-[3px]">
+            <div className="">
               <NeumorphismButton></NeumorphismButton>
             </div>
           </ul>

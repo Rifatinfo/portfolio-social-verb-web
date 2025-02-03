@@ -11,7 +11,7 @@ const AboutAndTeam = () => {
     return (
         <div className="max-w-7xl mx-auto">
             {/* about */}
-            <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12 ">
+            <div className="flex flex-col md:flex-row items-center justify-between  py-12 border">
                 <motion.div
                     initial={{ opacity: 0, x: -50 }}
                     animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : -50 }}
@@ -44,7 +44,7 @@ const AboutAndTeam = () => {
                 </motion.div>
             </div>
             {/* Team */}
-            <div className="flex flex-col md:flex-row items-center justify-between px-6 md:px-12 py-12">
+            <div className="flex flex-col md:flex-row items-center justify-between border py-12">
                 <motion.div
                     initial={{ opacity: 0, x: 50 }}
                     animate={{ opacity: isVisible ? 1 : 0, x: isVisible ? 0 : 50 }}

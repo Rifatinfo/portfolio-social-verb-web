@@ -4,7 +4,7 @@ import { GrUserExpert } from "react-icons/gr";
 const Cart = () => {
   return (
     <div>
-      <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 md:gap-4 gap-2 md:p-0 p-6">
+      <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 lg:grid-cols-4 md:gap-4 gap-2 border">
         {/* Service Cards */}
         {[
           {

@@ -31,7 +31,7 @@ const stats = [
 export default function Counting() {
   return (
     <motion.div
-      className="max-w-6xl mx-auto mt-16 p-5"
+      className="max-w-7xl mx-auto mt-16 border"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}

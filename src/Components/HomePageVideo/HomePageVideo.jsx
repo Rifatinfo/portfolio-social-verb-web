@@ -6,10 +6,10 @@ import ReactPlayer from "react-player";
 const HomePageVideo = () => {
  
   return (
-    <div className="flex-cols gap-4 md:flex md:gap-10 max-w-7xl mx-auto mt-[75px]">
+    <div className="flex-cols gap-4 md:flex md:gap-10 max-w-7xl mx-auto mt-[75px]  border">
       {/* text */}
       <div className="md:w-2/5">
-        <div className="flex flex-col justify-center p-6 text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
+        <div className="flex flex-col justify-center  text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
           <h1 className="text-5xl font-bold leading-none sm:text-6xl">Transform Your
             <span className="text-[#C73450]"> Ideas </span> into Reality
           </h1>
@@ -24,7 +24,7 @@ const HomePageVideo = () => {
       </div>
 
       {/* video */}
-      <div className="md:w-3/5 p-2 relative rounded-xl overflow-hidden"> {/* Aspect ratio container */}
+      <div className="md:w-3/5  relative rounded-xl overflow-hidden"> {/* Aspect ratio container */}
         <ReactPlayer
           url="https://www.youtube.com/embed/1V-BxNgrCJM?si=QMFAkpgQEXO6ZsF-"
           light={<img src="https://img.youtube.com/vi/1V-BxNgrCJM/maxresdefault.jpg" alt="Thumbnail"  className="rounded-xl" />}

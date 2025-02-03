@@ -10,7 +10,7 @@ const ServicesCart = () => {
     <div>
         {/* title */}
         <ServiceTitle></ServiceTitle>
-        <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-2 p-6">
+        <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-4 border">
       {/* Service Card 1 */}
       <div className="bg-white border border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl">
         <div className="p-6">
