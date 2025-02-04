@@ -143,7 +143,7 @@ const Portfolio = ({ loadData }) => {
                   <Link to={`/video/${singleItem.id}`}>
                   <div>
                             <div className="relative">
-                            <figure className=" w-[307] h-[174px]">
+                            <figure className=" h-[174px]">
                                 <img 
                                 className="rounded-2xl"
                                 src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
