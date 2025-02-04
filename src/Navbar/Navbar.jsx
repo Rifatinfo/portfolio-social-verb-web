@@ -2,9 +2,7 @@ import { useContext, useState } from "react";
 import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import NeumorphismButton from "../Components/NeumorphismButton";
-
-// import logo from '../assets/Social_verb_logo.png';
-// import logo1 from '../assets/social.svg';
+import logo from '../assets/Logo.png'
 import { Link } from "react-router-dom";
 import { ScrollContext } from "../../ScrollProvider";
 const Navbar = () => {
@@ -16,10 +14,10 @@ const Navbar = () => {
     <div className="bg-gray-100 ">
       <nav className="fixed top-0 left-0 w-full shadow bg-white z-50">
         <div className="md:max-w-7xl md:mx-auto ">
-        <div className="flex justify-between items-center  py-4">
+        <div className="flex justify-between items-center py-4">
           {/* Logo */}
-          <div className="border">
-          <Link onClick={() => scrollToSection(HomeRef)}><p className="text-[#C73450] font-bold text-xl">Social Verb</p></Link>
+          <div>
+          <Link to="/"><img className="w-full h-[32px]" src={logo}/></Link>
           </div>
 
           {/* Desktop Menu */}
@@ -32,7 +30,6 @@ const Navbar = () => {
             <li className="cursor-pointer transition-colors duration-300" >Status</li>
           </ul>
           <div className="hidden md:flex items-center gap-6 ">
-            {/* <p className="text-xl visible"><FaCartShopping /></p> */}
             <NeumorphismButton></NeumorphismButton>
           </div>
 
