@@ -24,7 +24,7 @@ const Portfolio = ({ loadData }) => {
       <PageTitle2></PageTitle2>
         <div className="grid grid-cols-1 gap-2 md:flex md:gap-4 ">
           <div className="w-full md:w-1/6 ">
-            <div className="md:grid md:grid-cols-1 md:gap-2 grid grid-cols-2 gap-2">
+            <div className="md:grid md:grid-cols-1 md:gap-2 grid grid-cols-2 gap-2  md:p-0 p-2">
               <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
                 <span
                   className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
@@ -60,15 +60,6 @@ const Portfolio = ({ loadData }) => {
                 ></span>
                 <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
                    CG Motion
-                </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
-                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                  style={{ zIndex: 0 }}
-                ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                   Video Library
                 </span>
               </button>
               <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
@@ -142,14 +133,14 @@ const Portfolio = ({ loadData }) => {
                 AllProduct.slice(0, productToShow).map(singleItem => <div key={singleItem.id}>
                   <Link to={`/video/${singleItem.id}`}>
                   <div>
-                            <div className="relative">
-                            <figure className=" h-[174px]">
+                            <div className="relative md:-space-y-5.5 space-y-2 md:p-0 p-2">
+                            <figure className="h-[174px]">
                                 <img 
                                 className="rounded-2xl"
                                 src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
                                 alt="Shoes" />
                             </figure>
-                            <div>
+                            <div className="">
                                 <p className="text-lg font-semibold">A card component has  </p>
                                 <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
                             </div>
