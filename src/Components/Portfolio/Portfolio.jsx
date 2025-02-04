@@ -9,22 +9,22 @@ import PageTitle2 from "../PageTitle2/PageTitle2";
 import PlayButton from "../Video/PlayButton";
 const Portfolio = ({ loadData }) => {
   const [AllProduct, setAllProduct] = useState(loadData);
-  const [productToShow, setProductToShow] = useState(4);
+  const [productToShow, setProductToShow] = useState(8);
   const loadMoreProducts = () => {
     if (productToShow >= AllProduct.length) {
       return;
     } else {
-      setProductToShow(previousProductToShow => previousProductToShow + 4);
+      setProductToShow(previousProductToShow => previousProductToShow + 8);
     }
   }
 
   return (
-    <div className=" md:max-w-7xl md:mx-auto ">
+    <div className="md:max-w-7xl md:mx-auto">
       <div>
       <PageTitle2></PageTitle2>
-        <div className="grid grid-cols-1 gap-2 md:flex md:gap-4">
-          <div className="w-full md:w-1/5 ">
-            <div className="md:grid md:grid-cols-1 md:gap-[20px] grid grid-cols-2 gap-2">
+        <div className="grid grid-cols-1 gap-2 md:flex md:gap-4 ">
+          <div className="w-full md:w-1/6 ">
+            <div className="md:grid md:grid-cols-1 md:gap-2 grid grid-cols-2 gap-2">
               <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
                 <span
                   className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
@@ -53,32 +53,90 @@ const Portfolio = ({ loadData }) => {
                   3D Animations
                 </span>
               </button>
-
-              <details className="dropdown">
-                <summary className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group flex items-center gap-1">
-                  <span
-                    className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                    style={{ zIndex: 0 }}
-                  ></span>
-                  <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                    Video Library
-                  </span>
-                  <RiArrowDownSLine className="relative z-10 text-xl group-hover:text-white transition-colors duration-300 ease-in-out" />
-                </summary>
-                <ul className="menu dropdown-content bg-base-100 rounded-box w-52 p-2 shadow-sm text-[#dd0429] ">
-                  <li className="hover:bg-[#dd0429] hover:text-white hover:rounded-lg hover:font-medium"><a>CG Motion</a></li>
-                  <li className="hover:bg-[#dd0429] hover:text-white hover:rounded-lg hover:font-medium"><a>OVC</a></li>
-                  <li className="hover:bg-[#dd0429] hover:text-white hover:rounded-lg hover:font-medium"><a>TVC</a></li>
-                  <li className="hover:bg-[#dd0429] hover:text-white hover:rounded-lg hover:font-medium"><a>Documentary</a></li>
-                  <li className="hover:bg-[#dd0429] hover:text-white hover:rounded-lg hover:font-medium"><a>Video Explainer</a></li>
-                  <li className="hover:bg-[#dd0429] hover:text-white hover:rounded-lg hover:font-medium"><a>Illustration Video</a></li>
-                  <li className="hover:bg-[#dd0429] hover:text-white hover:rounded-lg hover:font-medium"><a>VFX Motion</a></li>
-                </ul>
-              </details>
-
+              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                   CG Motion
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                   Video Library
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                  3D Animations
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                OVC
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                TVC
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                   Documentary
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Video Explainer
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Illustration Video
+                </span>
+              </button>
+              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+                <span
+                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
+                  style={{ zIndex: 0 }}
+                ></span>
+                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                VFX Motion
+                </span>
+              </button>
             </div>
           </div>
-          <div className="w-full md:w-4/5">
+          <div className="w-full md:w-5/6">
             <div className="grid  grid-cols-1 gap-3 md:grid-cols-4 md:grid-12">
               {
                 AllProduct.slice(0, productToShow).map(singleItem => <div key={singleItem.id}>

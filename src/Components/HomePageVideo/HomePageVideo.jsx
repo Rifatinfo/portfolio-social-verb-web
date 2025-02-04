@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 const HomePageVideo = () => {
  
   return (
-    <div className="flex-cols gap-4 md:flex md:gap-10 max-w-7xl mx-auto mt-[75px]  border">
+    <div className="flex-cols gap-4 md:flex md:gap-10 max-w-7xl mx-auto mt-[95px]">
       {/* text */}
       <div className="md:w-2/5">
         <div className="flex flex-col justify-center  text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">
@@ -17,8 +17,8 @@ const HomePageVideo = () => {
             <br className="hidden md:inline lg:hidden" />From static concepts to dynamic innovations, we bring your vision to life with expertise and excellence
           </p>
           <div className="flex flex-col space-y-4 sm:items-center sm:justify-center sm:flex-row sm:space-y-0 sm:space-x-4 lg:justify-start">
-            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold rounded bg-[#C73450] text-gray-50 btn-outline border-2 border-[#C73450]">Explore Projects</a>
-            <a rel="noopener noreferrer" href="#" className="px-8 py-3 text-lg font-semibold border-2 rounded dark:border-gray-800">Get Started</a>
+            <a rel="noopener noreferrer" href="#" className="px-6 py-2 text-lg font-semibold rounded bg-[#C73450] text-gray-50 btn-outline border-2 border-[#C73450]">Explore Projects</a>
+            <a rel="noopener noreferrer" href="#" className="px-6 py-2 text-lg font-semibold border-2 rounded dark:border-gray-800">Get Started</a>
           </div>
         </div>
       </div>
