@@ -6,6 +6,7 @@ import Home from "../Pages/Home/Home";
 import ErrorPage from "../Pages/Home/ErrorPage/ErrorPage";
 import VideoDetails from "../Pages/Home/VideoDetails/VideoDetails";
 import OurTeam from "../Components/OurTeam/OurTeam";
+import Login from "../Pages/Login/Login";
 
   const router = createBrowserRouter([
     {
@@ -26,6 +27,10 @@ import OurTeam from "../Components/OurTeam/OurTeam";
         {
             path : "/our-team",
             element : <OurTeam></OurTeam>
+        },
+        {
+            path : "/login",
+            element : <Login></Login>
         }
       ],
     },

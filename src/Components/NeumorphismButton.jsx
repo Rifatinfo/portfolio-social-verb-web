@@ -1,7 +1,9 @@
 import { FiSend } from "react-icons/fi";
+import { Link } from "react-router-dom";
 
 const NeumorphismButton = () => {
-    return (
+  return (
+    <Link to="/login">
       <button
         className={`
           px-4 py-2 rounded-full 
@@ -18,7 +20,8 @@ const NeumorphismButton = () => {
         <FiSend />
         <span>Sign In</span>
       </button>
-    );
-  };
-  
-  export default NeumorphismButton;
+    </Link>
+  );
+};
+
+export default NeumorphismButton;

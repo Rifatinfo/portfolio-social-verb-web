@@ -6,7 +6,7 @@ const PageTitle2 = () => {
   const {PortfolioRef} = useContext(ScrollContext);
   return (
     <section ref={PortfolioRef} className="bg-[#f9fcff] py-[70px]">
-      <div className="mx-auto px-4 sm:container">
+      <div className="md:max-w-7xl md:mx-auto">
         <div className="border-l-[5px] border-[#dd0429] pl-5">
           <h2 className="mb-2 text-4xl font-semibold text-dark">
           work showcase

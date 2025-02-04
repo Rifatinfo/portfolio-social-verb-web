@@ -15,11 +15,11 @@ const Navbar = () => {
   return (
     <div className="bg-gray-100 ">
       <nav className="fixed top-0 left-0 w-full shadow bg-white z-50">
-        <div className="md:max-w-7xl md:mx-auto border">
+        <div className="md:max-w-7xl md:mx-auto ">
         <div className="flex justify-between items-center  py-4">
           {/* Logo */}
           <div className="border">
-          <Link onClick={() => scrollToSection(HomeRef)}><p>Social Verb</p></Link>
+          <Link onClick={() => scrollToSection(HomeRef)}><p className="text-[#C73450] font-bold text-xl">Social Verb</p></Link>
           </div>
 
           {/* Desktop Menu */}
