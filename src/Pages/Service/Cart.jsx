@@ -45,8 +45,8 @@ const Cart = () => {
                     <img className="w-[70px] h-[70px]" src={service.imgSrc} alt="" />
               </div>
               <div>
-              <h2 className="h-[100px] md:mt-0 mt-10 text-center md:text-start md:text-lg text-xl font-semibold text-gray-800 mb-4 group-hover:text-white">
-                {service.title}
+              <h2 className="h-[100px] md:mt-0 mt-10 text-center md:text-start md:text-[16px] text-lg font-semibold text-gray-800 mb-4 group-hover:text-white">
+                  {service.title}
               </h2>
               <div className="md:mt-10 mt-4">
                 <a
