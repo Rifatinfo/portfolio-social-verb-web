@@ -1,31 +1,39 @@
 import { motion } from "framer-motion";
-import { GrUserExpert } from "react-icons/gr";
 
 const Cart = () => {
   return (
     <div>
-      <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 lg:grid-cols-4 md:gap-4 gap-2 border">
+      <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 lg:grid-cols-6 md:gap-4 gap-2 p-2 md:p-0 mt-16">
         {/* Service Cards */}
         {[
           {
-            title: "Creative Concept & Execution",
-            imgSrc:
-              "https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2018/10/service-icon-1-1.png",
+            title: "Software management ",
+            imgSrc:"https://cdn-icons-png.flaticon.com/512/7075/7075369.png",
           },
           {
-            title: "Your Brand with Advertising Solutions",
+            title: "Branding & Promotion",
             imgSrc:
-              "https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2018/10/service-icon-2-1.png",
+              "https://cdn-icons-png.flaticon.com/512/10694/10694239.png",
           },
           {
-            title: "Video Production & Photography",
+            title: "Event & Activation",
             imgSrc:
-              "https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2018/10/service-icon-3-1.png",
+              "https://cdn-icons-png.flaticon.com/512/7046/7046489.png",
           },
           {
-            title: "Design and Printing Solutions",
+            title: "Web & App",
             imgSrc:
-              "https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2018/10/service-icon-4.png",
+              "https://cdn-icons-png.flaticon.com/512/7075/7075373.png",
+          },
+          {
+            title: "Digital Marketing",
+            imgSrc:
+              "https://cdn-icons-png.flaticon.com/512/2065/2065064.png",
+          },
+          {
+            title: "Content Development",
+            imgSrc:
+              "https://cdn-icons-png.flaticon.com/512/3852/3852711.png",
           },
         ].map((service, index) => (
           <div
@@ -34,13 +42,13 @@ const Cart = () => {
           >
             <div className="p-6  mt-10">
               <div className="mb-6 flex items-center justify-center">
-                <GrUserExpert className="text-6xl" />
+                    <img className="w-[70px] h-[70px]" src={service.imgSrc} alt="" />
               </div>
               <div>
-              <h2 className="md:text-2xl text-xl font-semibold text-gray-800 mb-4 group-hover:text-white">
+              <h2 className="h-[100px] md:mt-0 mt-10 text-center md:text-start md:text-lg text-xl font-semibold text-gray-800 mb-4 group-hover:text-white">
                 {service.title}
               </h2>
-              <div className="md:mt-24 mt-18">
+              <div className="md:mt-10 mt-4">
                 <a
                   href="#more"
                   className="text-[#DD0429] group-hover:text-white font-semibold underline"
@@ -52,24 +60,6 @@ const Cart = () => {
             </div>
           </div>
         ))}
-      </div>
-
-      {/* Show More Button */}
-      <div className="text-center mt-8 mb-4">
-        <motion.button
-          className="relative group px-6 py-3 text-white font-semibold text-lg rounded-full bg-[#DD0429] shadow-lg transition-all hover:shadow-2xl hover:scale-105"
-          whileHover={{ scale: 1.1 }}
-          whileTap={{ scale: 0.95 }}
-        >
-          <span className="relative z-10">Show More</span>
-
-          {/* Glowing Effect */}
-          <motion.div
-            className="absolute inset-0 bg-[#DD0429] opacity-30 rounded-full blur-xl transition-opacity group-hover:opacity-50"
-            animate={{ opacity: [0.3, 0.5, 0.3] }}
-            transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-          />
-        </motion.button>
       </div>
     </div>
   );

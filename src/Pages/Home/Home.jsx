@@ -29,13 +29,13 @@ const Home = () => {
             {/* <Slider></Slider> */}
             <HomePageVideo></HomePageVideo>
             <Portfolio loadData={loadData}></Portfolio>
-            <ServicesCart></ServicesCart>
+            {/* <ServicesCart></ServicesCart> */}
              <Cart></Cart>
             <OurClients></OurClients>
              <Counting></Counting>
              <AboutAndTeam></AboutAndTeam>
             {/* <TeamSection></TeamSection> */}
-            <Contact></Contact>
+            {/* <Contact></Contact> */}
             <Testimonials></Testimonials>
             <BlogSection></BlogSection>
         </div>

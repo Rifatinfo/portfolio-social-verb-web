@@ -8,6 +8,7 @@ import { Link } from "react-router-dom";
 import PageTitle2 from "../PageTitle2/PageTitle2";
 import PlayButton from "../Video/PlayButton";
 import { RiArrowDownSLine } from "react-icons/ri";
+import Pagination from "./Pagination";
 const Portfolio = ({ loadData }) => {
   const [AllProduct, setAllProduct] = useState(loadData);
   const [productToShow, setProductToShow] = useState(8);
@@ -23,9 +24,9 @@ const Portfolio = ({ loadData }) => {
     <div className="md:max-w-7xl md:mx-auto">
       <div>
       <PageTitle2></PageTitle2>
-        <div className="grid grid-cols-1 gap-2 md:flex md:gap-4 ">
+        <div className="grid grid-cols-1 gap-2 md:flex md:gap-4 md:px-0 px-1">
           <div className="w-full md:w-1/6 ">
-            <div className="md:grid md:grid-cols-1 md:gap-2 grid grid-cols-2 gap-2  md:p-0 p-2">
+            <div className="md:grid md:grid-cols-1 md:gap-2 grid grid-cols-2 gap-2">
               
               {/* <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
                 <span
@@ -161,12 +162,12 @@ const Portfolio = ({ loadData }) => {
             </div>
           </div>
           <div className="w-full md:w-5/6">
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-4 md:grid-12 md:px-0 md:ml-0 ml-2">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-4 md:grid-12 md:px-0">
               {
                 AllProduct.slice(0, productToShow).map(singleItem => <div key={singleItem.id}>
                   <Link to={`/video/${singleItem.id}`}>
                   <div>
-                            <div className="relative md:-space-y-5.5 space-y-2 md:p-0 p-2">
+                            <div className="relative md:-space-y-5.5 space-y-2">
                             <figure className="h-[174px]">
                                 <img 
                                 className="rounded-2xl"
@@ -191,21 +192,7 @@ const Portfolio = ({ loadData }) => {
             {
           productToShow < AllProduct.length && <div>
             {/* showMore button  */}
-            <div className="text-center mt-4 mb-4">
-              <motion.button
-                className="relative group px-6 py-3 text-white font-semibold text-lg rounded-full 
-                 bg-[#DD0429] shadow-lg transition-all 
-                 hover:shadow-2xl hover:scale-105"
-                whileHover={{ scale: 1.1 }}
-                whileTap={{ scale: 0.95 }}
-                onClick={() => loadMoreProducts()}
-              >
-                <span className="relative z-10">More</span>
-
-                {/* Glowing Effect */}
-                
-              </motion.button>
-            </div>
+            <Pagination></Pagination>
           </div>
         }
           </div>
