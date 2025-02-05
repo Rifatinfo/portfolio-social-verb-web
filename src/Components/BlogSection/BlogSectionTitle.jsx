@@ -4,7 +4,7 @@ const BlogSectionTitle = () => {
     return (
         <div>
             <motion.div
-      className="mt-28 mb-10 text-center"
+      className="mt-18 mb-10 text-center"
       initial={{ opacity: 0, y: 20 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
