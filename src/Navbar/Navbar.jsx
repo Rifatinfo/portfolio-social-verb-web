@@ -9,6 +9,7 @@ const Navbar = () => {
 
   const { servicesRef, scrollToSection, PortfolioRef, AboutRef, ContactRef , HomeRef} = useContext(ScrollContext);
   const [open, setOpen] = useState(false);
+  
 
   return (
     <div className="bg-gray-100 ">

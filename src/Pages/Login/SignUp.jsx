@@ -5,6 +5,7 @@ import auth from '../../Firebase.init/Firebase.init';
 import { useState } from 'react';
 const SignUp = () => {
     const [errorMessage , setErrorMessage] = useState('');
+    // const [user, setUser] = useState(null);
     console.log(errorMessage);
     const handleLoginButton = (e) =>{
         e.preventDefault();
@@ -12,15 +13,35 @@ const SignUp = () => {
         const password = e.target.password.value;
         console.log(email, password);
         
-
+        // password validation
+        if(password < 6){
+           alert("Please provide 6 character or longer")
+           return;
+        }
+       const  lowerCaseLetters = /[a-z]/g;
+       if(!lowerCaseLetters.test(password)){
+          alert("Provided a one lowercase")
+          return;
+       }
+       const  upperCaseLetters = /[A-Z]/g;
+       if(!upperCaseLetters.test(password)){
+        alert("Provided a one Uppercase")
+        return;
+        }
+        const specialCharRegex = /[!@#$%^&*()_+{}\[\]:;<>,.?~\\/-]/;
+        if(!specialCharRegex.test(password)){
+            alert("Provided a one special")
+            return;
+        }
+          
         // create new user 
         createUserWithEmailAndPassword(auth, email, password)
         .then((result) => 
-            console.log(result.user)
+             console.log(result.user)
             // alert('successfully')
         )
         .catch(error => {
-            console.log(error);
+            // setUser(error);
             setErrorMessage(error.message);
         })
     }

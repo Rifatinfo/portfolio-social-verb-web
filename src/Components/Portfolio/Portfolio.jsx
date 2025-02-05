@@ -1,12 +1,13 @@
 // import lo from '../../../public/logo.svg';
-import { RiArrowDownSLine } from "react-icons/ri";
-import { FiSend } from "react-icons/fi";
-import Video from "../Video/Video";
+// import { RiArrowDownSLine } from "react-icons/ri";
+// import { FiSend } from "react-icons/fi";
+// import Video from "../Video/Video";
 import { useState } from "react";
 import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import PageTitle2 from "../PageTitle2/PageTitle2";
 import PlayButton from "../Video/PlayButton";
+import { RiArrowDownSLine } from "react-icons/ri";
 const Portfolio = ({ loadData }) => {
   const [AllProduct, setAllProduct] = useState(loadData);
   const [productToShow, setProductToShow] = useState(8);
@@ -25,26 +26,8 @@ const Portfolio = ({ loadData }) => {
         <div className="grid grid-cols-1 gap-2 md:flex md:gap-4 ">
           <div className="w-full md:w-1/6 ">
             <div className="md:grid md:grid-cols-1 md:gap-2 grid grid-cols-2 gap-2  md:p-0 p-2">
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
-                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                  style={{ zIndex: 0 }}
-                ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                  Static Designs
-                </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
-                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                  style={{ zIndex: 0 }}
-                ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                  Dynamic
-                </span>
-              </button>
-             
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
+              
+              {/* <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
                 <span
                   className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
                   style={{ zIndex: 0 }}
@@ -52,83 +35,133 @@ const Portfolio = ({ loadData }) => {
                 <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
                   3D Animations
                 </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
+              </button> */}
+              
+              {/* dropdown */}
+              <details className="dropdown">
+              <summary className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden w-full group">
+              <span
                   className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
                   style={{ zIndex: 0 }}
                 ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                   CG Motion
-                </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
+                <p className="text-[11px] md:text-[14px] relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Content Development
+                </p>
+                <RiArrowDownSLine className="relative z-10 text-xl transition-colors duration-300 ease-in-out group-hover:text-white" />
+              </summary>
+              <ul className="menu dropdown-content bg-base-100 rounded-box w-full p-2 shadow-md text-[#dd0429]">
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Social media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Digital media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Content writing</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Photography</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Design</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Audio-visual & CG</a></li>
+              </ul>
+              </details>
+              <details className="dropdown">
+              <summary className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden w-full group">
+              <span
                   className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
                   style={{ zIndex: 0 }}
                 ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                  3D Animations
+                <span className="text-[11px] md:text-[14px] relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Digital Marketing
                 </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
+                <RiArrowDownSLine className="relative z-10 text-xl transition-colors duration-300 ease-in-out group-hover:text-white" />
+              </summary>
+              <ul className="menu dropdown-content bg-base-100 rounded-box w-full p-2 shadow-md text-[#dd0429]">
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Social media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Digital media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Content writing</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Photography</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Design</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Audio-visual & CG</a></li>
+              </ul>
+              </details>
+              <details className="dropdown">
+              <summary className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden w-full group">
+              <span
                   className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
                   style={{ zIndex: 0 }}
                 ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                OVC
+                <span className="text-[11px] md:text-[14px] relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Branding & Promotion
                 </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
+                <RiArrowDownSLine className="relative z-10 text-xl transition-colors duration-300 ease-in-out group-hover:text-white" />
+              </summary>
+              <ul className="menu dropdown-content bg-base-100 rounded-box w-full p-2 shadow-md text-[#dd0429]">
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Social media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Digital media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Content writing</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Photography</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Design</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Audio-visual & CG</a></li>
+              </ul>
+              </details>
+              <details className="dropdown">
+              <summary className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden w-full group">
+              <span
                   className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
                   style={{ zIndex: 0 }}
                 ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                TVC
+                <span className="text-[11px] md:text-[14px] relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Web & App
                 </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
+                <RiArrowDownSLine className="relative z-10 text-xl transition-colors duration-300 ease-in-out group-hover:text-white" />
+              </summary>
+              <ul className="menu dropdown-content bg-base-100 rounded-box w-full p-2 shadow-md text-[#dd0429]">
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Social media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Digital media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Content writing</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Photography</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Design</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Audio-visual & CG</a></li>
+              </ul>
+              </details>
+              <details className="dropdown">
+              <summary className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden w-full group">
+              <span
                   className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
                   style={{ zIndex: 0 }}
                 ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                   Documentary
+                <span className="text-[11px] md:text-[14px] relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Event & Activation
                 </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
+                <RiArrowDownSLine className="relative z-10 text-xl transition-colors duration-300 ease-in-out group-hover:text-white" />
+              </summary>
+              <ul className="menu dropdown-content bg-base-100 rounded-box w-full p-2 shadow-md text-[#dd0429]">
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Social media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Digital media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Content writing</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Photography</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Design</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Audio-visual & CG</a></li>
+              </ul>
+              </details>
+              <details className="dropdown">
+              <summary className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden w-full group">
+              <span
                   className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
                   style={{ zIndex: 0 }}
                 ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                Video Explainer
+                <span className="text-[11px] md:text-[14px] relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
+                Software management
                 </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
-                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                  style={{ zIndex: 0 }}
-                ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                Illustration Video
-                </span>
-              </button>
-              <button className="btn btn-outline text-[#dd0429] border-[#dd0429] border-2 relative overflow-hidden group">
-                <span
-                  className="absolute inset-0 bg-[#dd0429] transform scale-x-0 group-hover:scale-x-100 transition-transform duration-300 ease-in-out origin-left"
-                  style={{ zIndex: 0 }}
-                ></span>
-                <span className="relative z-10 group-hover:text-white transition-colors duration-300 ease-in-out">
-                VFX Motion
-                </span>
-              </button>
+                <RiArrowDownSLine className="relative z-10 text-xl transition-colors duration-300 ease-in-out group-hover:text-white" />
+              </summary>
+              <ul className="menu dropdown-content bg-base-100 rounded-box w-full p-2 shadow-md text-[#dd0429]">
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Social media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Digital media content</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Content writing</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Photography</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Design</a></li>
+                <li><a className="hover:bg-[#dd0429] hover:text-white transition-all">Audio-visual & CG</a></li>
+              </ul>
+              </details>
             </div>
           </div>
           <div className="w-full md:w-5/6">
-            <div className="grid  grid-cols-1 gap-3 md:grid-cols-4 md:grid-12">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-4 md:grid-12 md:px-0 md:ml-0 ml-2">
               {
                 AllProduct.slice(0, productToShow).map(singleItem => <div key={singleItem.id}>
                   <Link to={`/video/${singleItem.id}`}>
@@ -167,15 +200,10 @@ const Portfolio = ({ loadData }) => {
                 whileTap={{ scale: 0.95 }}
                 onClick={() => loadMoreProducts()}
               >
-                <span className="relative z-10">Show More</span>
+                <span className="relative z-10">More</span>
 
                 {/* Glowing Effect */}
-                <motion.div
-                  className="absolute inset-0 bg-[#DD0429] opacity-30 
-                   rounded-full blur-xl transition-opacity group-hover:opacity-50"
-                  animate={{ opacity: [0.3, 0.5, 0.3] }}
-                  transition={{ repeat: Infinity, duration: 1.5, ease: "easeInOut" }}
-                />
+                
               </motion.button>
             </div>
           </div>
