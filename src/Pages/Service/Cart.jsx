@@ -10,31 +10,37 @@ const Cart = () => {
         {/* Service Cards */}
         {[
           {
-            title: "Software management",
+            title: "Software",
+            title2: "management",
             imgSrc:"https://cdn-icons-png.flaticon.com/512/7075/7075369.png",
           },
           {
-            title: "Branding & Promotion",
+            title: "Branding & ",
+            title2:"Promotion",
             imgSrc:
               "https://cdn-icons-png.flaticon.com/512/10694/10694239.png",
           },
           {
-            title: "Event & Activation",
+            title: "Event & ",
+            title2:"Activation",
             imgSrc:
-              "https://cdn-icons-png.flaticon.com/512/7046/7046489.png",
+              "https://cdn-icons-png.flaticon.com/512/15952/15952475.png",
           },
           {
-            title: "Web & App",
+            title: "Web &",
+            title2:"App",
             imgSrc:
               "https://cdn-icons-png.flaticon.com/512/7075/7075373.png",
           },
           {
-            title: "Digital Marketing",
+            title: "Digital",
+            title2:"Marketing",
             imgSrc:
               "https://cdn-icons-png.flaticon.com/512/2065/2065064.png",
           },
           {
-            title: "Content Development",
+            title: "Content",
+            title2:"Development",
             imgSrc:
               "https://cdn-icons-png.flaticon.com/512/3852/3852711.png",
           },
@@ -48,9 +54,10 @@ const Cart = () => {
                     <img className="w-[70px] h-[70px]" src={service.imgSrc} alt="" />
               </div>
               <div>
-              <h2 className="h-[100px] md:mt-0 mt-10 text-center md:text-start md:text-[16px] text-lg font-semibold text-gray-800 mb-4 group-hover:text-white">
-                  {service.title}
-              </h2>
+              <div className="h-[80px] -space-y-2 text-lg  mt-15 text-start md:text-[16px] font-semibold text-gray-800  group-hover:text-white">
+                 <p> {service.title}</p>
+                 <p> {service.title2}</p>
+              </div>
               <div className="md:mt-10 mt-4">
                 <a
                   href="#more"

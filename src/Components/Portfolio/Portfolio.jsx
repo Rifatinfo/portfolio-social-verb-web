@@ -189,15 +189,15 @@ const Portfolio = ({ loadData }) => {
             </div>
 
             {/* show more button */}
-            {
+           
+          </div>
+        </div>
+        {
           productToShow < AllProduct.length && <div>
             {/* showMore button  */}
             <Pagination></Pagination>
           </div>
         }
-          </div>
-        </div>
-        
       </div>
     </div>
   );

@@ -1,5 +1,6 @@
 import { motion } from "framer-motion";
 import BlogSectionTitle from "./BlogSectionTitle";
+import Pagination from "../Portfolio/Pagination";
 
 const blogs = [
     {
@@ -70,6 +71,8 @@ export default function BlogSection() {
             </motion.article>
           ))}
         </div>
+
+        <Pagination></Pagination>
       </div>
     </section>
   );
