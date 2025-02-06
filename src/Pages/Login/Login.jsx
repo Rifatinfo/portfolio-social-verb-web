@@ -30,11 +30,11 @@ const Login = () => {
     }
     return (
         <div className="mt-[80px]">
-            <div className="md:flex md:justify-between md:gap-8 md:max-w-7xl md:mx-auto">
-                <div className='md:w-1/2 md:flex justify-center items-center'>
+            <div className="md:flex md:justify-center items-center md:gap-8 md:max-w-7xl md:mx-auto">
+                {/* <div className='md:w-1/2 md:flex justify-center items-center'>
                     <img src={formLogo} alt="" />
-                </div>
-                <div className=' md:w-1/2 md:flex justify-end items-center'>
+                </div> */}
+                <div>
                     <div className="w-full  h-[490px] max-w-md p-4 rounded-md shadow sm:p-8 dark:bg-gray-50 dark:text-gray-800">
                         <h2 className="mb-3 text-3xl font-bold text-center text-[#C73450]">Login to your account</h2>
                         <p className="text-sm text-center dark:text-gray-600 font-semibold">Dont have account?

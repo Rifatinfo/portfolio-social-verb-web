@@ -5,8 +5,9 @@ import NeumorphismButton from "../Components/NeumorphismButton";
 import logo from '../assets/Logo.png'
 import { Link } from "react-router-dom";
 import { ScrollContext } from "../../ScrollProvider";
+import { AuthContext } from "../Context/AuthProvider";
 const Navbar = () => {
-
+  const {user, signOutUser} = useContext(AuthContext);
   const { servicesRef, scrollToSection, PortfolioRef, AboutRef, ContactRef , HomeRef} = useContext(ScrollContext);
   const [open, setOpen] = useState(false);
   
@@ -23,15 +24,15 @@ const Navbar = () => {
 
           {/* Desktop Menu */}
           <ul className="hidden md:flex items-center space-x-6  font-medium text-[#C73450] ">
-            <li onClick={() => scrollToSection(HomeRef)}        className="cursor-pointer transition-colors duration-300">Home</li>
             <li onClick={() => scrollToSection(AboutRef)}       className="cursor-pointer transition-colors duration-300" >About</li>
             <li onClick={() => scrollToSection(servicesRef)}    className="cursor-pointer transition-colors duration-300" >Service</li>
             <li onClick={() => scrollToSection(PortfolioRef)}   className="cursor-pointer transition-colors duration-300" >Portfolio</li>
             <li onClick={() => scrollToSection(ContactRef)}     className="cursor-pointer transition-colors duration-300" >Contact</li>
+            <li onClick={() => scrollToSection(ContactRef)}     className="cursor-pointer transition-colors duration-300" >Blogs</li>
             <li className="cursor-pointer transition-colors duration-300" >Status</li>
           </ul>
           <div className="hidden md:flex items-center gap-6 ">
-            <NeumorphismButton></NeumorphismButton>
+            <NeumorphismButton user={user} signOutUser={signOutUser}></NeumorphismButton>
           </div>
 
           {/* Mobile Menu Button */}
@@ -57,14 +58,13 @@ const Navbar = () => {
             />
           </div>
           <ul className="flex flex-col items-center space-y-4 pt-10 text-gray-700 font-medium">
-            <li className="cursor-pointer transition-colors duration-300" >Home</li>
             <li onClick={() => { scrollToSection(AboutRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >About</li>
             <li onClick={() => { scrollToSection(servicesRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Service</li>
             <li onClick={() => { scrollToSection(PortfolioRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
-            <li onClick={() => { scrollToSection(ContactRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Contact</li>
+            <li onClick={() => scrollToSection(ContactRef)}     className="cursor-pointer transition-colors duration-300" >Blogs</li>
             <li className="cursor-pointer transition-colors duration-300" >Status</li>
-            <div className="">
-              <NeumorphismButton></NeumorphismButton>
+            <div>
+              <NeumorphismButton user={user} signOutUser={signOutUser}></NeumorphismButton>
             </div>
           </ul>
         </div>

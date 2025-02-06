@@ -37,7 +37,7 @@ const AboutAndTeam = () => {
 
                     {/* Learn More Button */}
                     <button className="mt-6 text-[#C73450] font-semibold text-lg relative group">
-                        Learn More About Us
+                         About Us
                         <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#C73450] transition-all duration-300 group-hover:w-full"></span>
                     </button>
                 </motion.div>
@@ -93,7 +93,7 @@ const AboutAndTeam = () => {
                     {/* Learn More Button */}
                     <Link to="/our-team">
                     <button className="mt-6 text-[#DD0429] font-semibold text-lg relative group">
-                        Learn More About Our Team
+                         About Our Team
                         <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#C73450] transition-all duration-300 group-hover:w-full"></span>
                     </button>
                     </Link>
