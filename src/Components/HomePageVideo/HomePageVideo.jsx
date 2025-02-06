@@ -6,7 +6,7 @@ import ReactPlayer from "react-player";
 const HomePageVideo = () => {
  
   return (
-    <div className="flex-cols gap-4 md:flex md:gap-10 max-w-7xl mx-auto mt-[95px] md:px-0 px-2">
+    <div className="flex-cols gap-4 md:flex md:gap-10 max-w-7xl mx-auto mt-[105px] md:px-0 px-2">
       {/* text */}
       <div className="md:w-2/5">
         <div className=" flex flex-col justify-center  text-center rounded-sm lg:max-w-md xl:max-w-lg lg:text-left">

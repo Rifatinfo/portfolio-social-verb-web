@@ -12,22 +12,22 @@ const Navbar = () => {
   
 
   return (
-    <div className="bg-gray-100 ">
+    <div className="bg-gray-100">
       <nav className="fixed top-0 left-0 w-full shadow bg-white z-50">
         <div className="md:max-w-7xl md:mx-auto ">
-        <div className="flex justify-between items-center py-4">
+        <div className="flex justify-between items-center py-4 md:pl-0 pl-4">
           {/* Logo */}
           <div>
           <Link to="/"><img className="w-full h-[32px]" src={logo}/></Link>
           </div>
 
           {/* Desktop Menu */}
-          <ul className="hidden md:flex items-center space-x-6 text-gray-700 font-medium">
-            <li onClick={() => scrollToSection(HomeRef)} className="cursor-pointer transition-colors duration-300">Home</li>
-            <li onClick={() => scrollToSection(AboutRef)} className="cursor-pointer transition-colors duration-300" >About</li>
-            <li onClick={() => scrollToSection(servicesRef)} className="cursor-pointer transition-colors duration-300" >Service</li>
-            <li onClick={() => scrollToSection(PortfolioRef)} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
-            <li onClick={() => scrollToSection(ContactRef)} className="cursor-pointer transition-colors duration-300" >Contact</li>
+          <ul className="hidden md:flex items-center space-x-6  font-medium text-[#C73450] ">
+            <li onClick={() => scrollToSection(HomeRef)}        className="cursor-pointer transition-colors duration-300">Home</li>
+            <li onClick={() => scrollToSection(AboutRef)}       className="cursor-pointer transition-colors duration-300" >About</li>
+            <li onClick={() => scrollToSection(servicesRef)}    className="cursor-pointer transition-colors duration-300" >Service</li>
+            <li onClick={() => scrollToSection(PortfolioRef)}   className="cursor-pointer transition-colors duration-300" >Portfolio</li>
+            <li onClick={() => scrollToSection(ContactRef)}     className="cursor-pointer transition-colors duration-300" >Contact</li>
             <li className="cursor-pointer transition-colors duration-300" >Status</li>
           </ul>
           <div className="hidden md:flex items-center gap-6 ">

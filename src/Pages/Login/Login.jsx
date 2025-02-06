@@ -2,9 +2,14 @@ import formLogo from '../../assets/login-image.jpg'
 import { GoogleAuthProvider, signInWithPopup } from "firebase/auth";
 import auth from '../../Firebase.init/Firebase.init';
 import { Link } from 'react-router-dom';
+import { useContext } from 'react';
+import { AuthContext } from '../../Context/AuthProvider';
 
 const Login = () => {
 
+    const {signInUser} = useContext(AuthContext);
+
+   
     const provider = new GoogleAuthProvider();
     const googleSignIn = () => {
         signInWithPopup(auth, provider)
@@ -13,6 +18,14 @@ const Login = () => {
             })
             .catch((error) => {
                 console.log(error.message)
+            })
+
+            signInUser()
+            .then(result =>{
+                console.log(result.user)
+            })
+            .catch(error => {
+                console.log('error' , error.message)
             })
     }
     return (

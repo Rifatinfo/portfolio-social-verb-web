@@ -31,7 +31,7 @@ const stats = [
 export default function Counting() {
   return (
     <motion.div
-      className="max-w-7xl mx-auto mt-16"
+      className="max-w-7xl mx-auto md:mt-20"
       initial={{ opacity: 0, y: 30 }}
       animate={{ opacity: 1, y: 0 }}
       transition={{ duration: 0.8, ease: "easeOut" }}
@@ -42,18 +42,18 @@ export default function Counting() {
             key={stat.id}
             className="relative space-y-4 p-6 text-center bg-white rounded-2xl shadow-xl 
                       transition-all duration-300 hover:scale-105 
-                      border border-gray-200 hover:border-[#DD0429] hover:text-white"
+                      border border-gray-200 hover:border-[#C73450] hover:text-white"
             whileHover={{ y: -5 }}
           >
             {/* Background Glow */}
             <motion.div
-              className="absolute inset-0 bg-[#DD0429] opacity-0 rounded-2xl transition-opacity"
+              className="absolute inset-0 bg-[#C73450] opacity-0 rounded-2xl transition-opacity"
               whileHover={{ opacity: 0.1 }}
             />
 
             <img className="mx-auto w-16 h-16" src={stat.icon} alt={stat.title} />
             
-            <h2 className="text-5xl font-extrabold text-[#DD0429] group-hover:text-white">
+            <h2 className="text-5xl font-extrabold text-[#C73450] group-hover:text-white">
               <CountUp end={stat.count} duration={3} enableScrollSpy />
             </h2>
             

@@ -1,17 +1,27 @@
 import { Link } from 'react-router-dom';
 import formLogo from '../../assets/login-image.jpg'
-import {  createUserWithEmailAndPassword } from "firebase/auth";
-import auth from '../../Firebase.init/Firebase.init';
-import { useState } from 'react';
+import { useContext, useState } from 'react';
+import { AuthContext } from '../../Context/AuthProvider';
 const SignUp = () => {
     const [errorMessage , setErrorMessage] = useState('');
     // const [user, setUser] = useState(null);
     console.log(errorMessage);
+
+    const {createUser} = useContext(AuthContext);
+
     const handleLoginButton = (e) =>{
         e.preventDefault();
         const email = e.target.email.value;
         const password = e.target.password.value;
         console.log(email, password);
+
+        createUser(email, password)
+        .then( result => {
+            console.log(result.user);
+        })
+        .catch(error => {
+            console.log('Error' , error.message)
+        })
         
         // password validation
         if(password < 6){
@@ -34,16 +44,7 @@ const SignUp = () => {
             return;
         }
           
-        // create new user 
-        createUserWithEmailAndPassword(auth, email, password)
-        .then((result) => 
-             console.log(result.user)
-            // alert('successfully')
-        )
-        .catch(error => {
-            // setUser(error);
-            setErrorMessage(error.message);
-        })
+       
     }
 
     return (

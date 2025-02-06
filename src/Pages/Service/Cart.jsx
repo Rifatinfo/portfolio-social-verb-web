@@ -1,13 +1,16 @@
-import { motion } from "framer-motion";
+import CartTitle from "./CartTitle";
 
 const Cart = () => {
   return (
     <div>
-      <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 lg:grid-cols-6 md:gap-4 gap-2 p-2 md:p-0 mt-16">
+      <div>
+        <CartTitle/>
+      </div>
+      <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 lg:grid-cols-6 md:gap-4 gap-2 p-2 md:p-0  md:px-0 px-2">
         {/* Service Cards */}
         {[
           {
-            title: "Software management ",
+            title: "Software management",
             imgSrc:"https://cdn-icons-png.flaticon.com/512/7075/7075369.png",
           },
           {
