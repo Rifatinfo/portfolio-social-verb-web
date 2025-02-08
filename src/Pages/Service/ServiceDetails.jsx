@@ -143,7 +143,7 @@ const ServiceDetails = () => {
             </div>
 
             {/* pricing */}
-            <div className=" md:w-3/4 w-full border">
+            <div className=" md:w-3/4 w-full ">
                 <section className="py-20 dark:bg-gray-100 dark:text-gray-800">
                     <div className="container px-4 mx-auto">
 
@@ -191,7 +191,7 @@ const ServiceDetails = () => {
                                             <span>Tristique enim nec</span>
                                         </li>
                                     </ul>
-                                    <button type="button" className="inline-block px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-violet-600 dark:text-gray-50">Get Started</button>
+                                    <button type="button" className="border-[#C73450] border-2  inline-block px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-violet-600 dark:text-gray-50">Get Started</button>
                                 </div>
                             </div>
                             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -229,7 +229,7 @@ const ServiceDetails = () => {
                                             <span>Aenean et lectus blandit</span>
                                         </li>
                                     </ul>
-                                    <a rel="noopener noreferrer" href="#" className="inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded dark:bg-gray-100 dark:text-violet-600">Get Started</a>
+                                    <a rel="noopener noreferrer" href="#" className="border bg-[#C73450] text-white inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded dark:bg-gray-100 dark:text-violet-600">Get Started</a>
                                 </div>
                             </div>
                             <div className="flex w-full mb-8 sm:px-4 md:w-1/2 lg:w-1/3 lg:mb-0">
@@ -273,7 +273,7 @@ const ServiceDetails = () => {
                                             <span>Vivamus ut lectus ex</span>
                                         </li>
                                     </ul>
-                                    <a rel="noopener noreferrer" href="#" className="inline-block w-full px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-violet-600 dark:text-gray-50">Get Started</a>
+                                    <a rel="noopener noreferrer" href="#" className="border-[#C73450] border-2 inline-block w-full px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-violet-600 dark:text-gray-50">Get Started</a>
                                 </div>
                             </div>
                         </div>
