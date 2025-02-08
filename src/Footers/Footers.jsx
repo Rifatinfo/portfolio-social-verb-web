@@ -11,9 +11,6 @@ const Footer = () => {
             <li>Contact</li>
           </ul>
 
-          <div className="md:mr-100 font-semibold self-center py-6 space-y-4 text-end sm:flex sm:space-y-0 justify-center sm:space-x-4  lg:justify-center">
-            <p>Copyright © {new Date().getFullYear()} - Social Verb</p>
-          </div>
           <div className="flex flex-col justify-center pt-6 lg:pt-0 text-2xl mb-1">
             <div className="flex justify-center space-x-4">
               <a >

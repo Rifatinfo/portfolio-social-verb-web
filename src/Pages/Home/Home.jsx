@@ -3,11 +3,10 @@ import { useLoaderData } from 'react-router-dom';
 import OurClients from '../../Components/OurClients/OurClients';
 import Counting from '../../Components/Counting/Counting';
 import BlogSection from "../../Components/BlogSection/BlogSection";
-// import Testimonials from "../../Components/Testimonials/Testimonials";
 import AboutAndTeam from "../../Components/AboutAndTeam/AboutAndTeam";
 import HomePageVideo from '../../Components/HomePageVideo/HomePageVideo';
-import Cart from '../Service/cart';
 import TestimonialSlide from '../../Components/Testimonials/TestimonialSlide';
+import ServiceCart from '../Service/ServiceCart';
 
 
 const Home = () => {
@@ -18,12 +17,11 @@ const Home = () => {
     return (
         <div>
             <HomePageVideo></HomePageVideo>
-             <Cart></Cart>
+            <ServiceCart/>
             <Portfolio loadData={loadData}></Portfolio>
              <OurClients></OurClients>
              <Counting></Counting>
              <AboutAndTeam></AboutAndTeam>
-            {/* <Testimonials></Testimonials> */}
             <TestimonialSlide></TestimonialSlide>
             <BlogSection></BlogSection>
         </div>

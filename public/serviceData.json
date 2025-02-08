@@ -1,0 +1,43 @@
+[
+    {
+        "_id": 6,
+        "title": "Content",
+        "title2":"Development",
+        "imgSrc":
+          "https://cdn-icons-png.flaticon.com/512/3852/3852711.png"
+    },
+    {
+        "_id": 5,
+        "title": "Digital",
+        "title2":"Marketing",
+        "imgSrc":
+          "https://cdn-icons-png.flaticon.com/512/2065/2065064.png"
+    },
+    {
+        "_id": 2,
+        "title": "Branding & ",
+        "title2":"Promotion",
+        "imgSrc":
+          "https://cdn-icons-png.flaticon.com/512/10694/10694239.png"
+    },
+    {
+        "_id": 4,
+        "title": "Web &",
+        "title2":"App",
+        "imgSrc":
+          "https://cdn-icons-png.flaticon.com/512/7075/7075373.png"
+    },
+    {
+        "_id": 3,
+        "title": "Event & ",
+        "title2":"Activation",
+        "imgSrc":
+          "https://cdn-icons-png.flaticon.com/512/15952/15952475.png"
+    },
+    {
+      "_id": 1,
+      "title": "Software",
+      "title2": "management",
+      "imgSrc":"https://cdn-icons-png.flaticon.com/512/7075/7075369.png"
+    }
+]
