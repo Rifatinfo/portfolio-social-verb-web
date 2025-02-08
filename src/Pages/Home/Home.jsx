@@ -3,10 +3,11 @@ import { useLoaderData } from 'react-router-dom';
 import OurClients from '../../Components/OurClients/OurClients';
 import Counting from '../../Components/Counting/Counting';
 import BlogSection from "../../Components/BlogSection/BlogSection";
-import Testimonials from "../../Components/Testimonials/Testimonials";
+// import Testimonials from "../../Components/Testimonials/Testimonials";
 import AboutAndTeam from "../../Components/AboutAndTeam/AboutAndTeam";
 import HomePageVideo from '../../Components/HomePageVideo/HomePageVideo';
 import Cart from '../Service/cart';
+import TestimonialSlide from '../../Components/Testimonials/TestimonialSlide';
 
 
 const Home = () => {
@@ -22,7 +23,8 @@ const Home = () => {
              <OurClients></OurClients>
              <Counting></Counting>
              <AboutAndTeam></AboutAndTeam>
-            <Testimonials></Testimonials>
+            {/* <Testimonials></Testimonials> */}
+            <TestimonialSlide></TestimonialSlide>
             <BlogSection></BlogSection>
         </div>
     );

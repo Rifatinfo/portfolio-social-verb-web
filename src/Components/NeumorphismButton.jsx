@@ -1,21 +1,11 @@
 import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
-const NeumorphismButton = ({ user , signOutUser}) => {
-console.log(user, signOutUser);
+const NeumorphismButton = () => {
 
-const handleSignOut = () =>{
-  signOutUser()
-  .then(() => {
-    console.log('Successfully Sign Out')
-  })
-  .catch(error => {
-    console.log(error);
-  })
-}
   return (
     <div>
-         <Link><button 
+         <Link to="/login"><button 
           className={`
        px-4 py-2 rounded-full 
        flex items-center gap-2 
@@ -29,7 +19,7 @@ const handleSignOut = () =>{
    `}
         >
           <FiSend />
-          <span>Contact</span>
+          <span>Sign In</span>
         </button></Link>   
 
     </div>

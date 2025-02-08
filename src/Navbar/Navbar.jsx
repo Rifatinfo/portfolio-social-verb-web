@@ -5,9 +5,8 @@ import NeumorphismButton from "../Components/NeumorphismButton";
 import logo from '../assets/Logo.png'
 import { Link } from "react-router-dom";
 import { ScrollContext } from "../../ScrollProvider";
-import { AuthContext } from "../Context/AuthProvider";
 const Navbar = () => {
-  const { user, signOutUser } = useContext(AuthContext);
+  
   const { servicesRef, scrollToSection, PortfolioRef, AboutRef, ContactRef} = useContext(ScrollContext);
   const [open, setOpen] = useState(false);
 
@@ -31,7 +30,7 @@ const Navbar = () => {
               <li className="cursor-pointer transition-colors duration-300" >Status</li>
             </ul>
             <div className="hidden md:flex items-center gap-6 ">
-              <NeumorphismButton user={user} signOutUser={signOutUser}></NeumorphismButton>
+              <NeumorphismButton></NeumorphismButton>
               
             </div>
 
@@ -64,7 +63,7 @@ const Navbar = () => {
             <li onClick={() => scrollToSection(ContactRef)} className="cursor-pointer transition-colors duration-300" >Blogs</li>
             <li className="cursor-pointer transition-colors duration-300" >Status</li>
             <div>
-              <NeumorphismButton user={user} signOutUser={signOutUser}></NeumorphismButton>
+              <NeumorphismButton></NeumorphismButton>
             </div>
           </ul>
         </div>
