@@ -3,8 +3,8 @@
 const Sleep = () => {
     return (
 
-        <div className=" mb-6">
-            <div className="w-[302px] h-[326px] rounded-xl flex flex-col overflow-hidden shadow-md transform transition-all hover:scale-105 duration-300 bg-white">
+        <div className=" mb-6 p-2">
+            <div className=" h-[326px] rounded-xl flex flex-col overflow-hidden shadow-md transform transition-all hover:scale-105 duration-300 bg-white">
                 <div className="flex flex-col justify-between flex-1 p-6 lg:py-8 lg:px-7">
                     <div className="flex-1">
                         <div className="flex items-center space-x-1 text-[#DD0429]">

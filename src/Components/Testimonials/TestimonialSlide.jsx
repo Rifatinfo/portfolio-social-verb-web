@@ -13,10 +13,10 @@ import Sleep from "./Sleep";
 
 const TestimonialSlide = () => {
     return (
-        <div className='max-w-7xl mx-auto'>
+        <div className='md:max-w-7xl md:mx-auto '>
             <Swiper
                 slidesPerView={1}
-                spaceBetween={8}
+                spaceBetween={6}
                 pagination={{
                     clickable: true,
                 }}

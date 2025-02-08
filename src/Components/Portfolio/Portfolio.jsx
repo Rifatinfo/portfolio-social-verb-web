@@ -162,7 +162,7 @@ const Portfolio = ({ loadData }) => {
             </div>
           </div>
           <div className="w-full md:w-5/6">
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-4 md:grid-12 md:px-0">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-4 md:grid-12 md:px-0 px-6">
               {
                 AllProduct.slice(0, productToShow).map(singleItem => <div key={singleItem.id}>
                   <Link to={`/video/${singleItem.id}`}>
