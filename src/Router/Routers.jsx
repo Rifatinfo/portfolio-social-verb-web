@@ -9,6 +9,7 @@ import OurTeam from "../Components/OurTeam/OurTeam";
 import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/Login/SignUp";
 import ServiceCart from "../Pages/Service/ServiceCart";
+import ServiceDetails from "../Pages/Service/ServiceDetails";
 
   const router = createBrowserRouter([
     {
@@ -39,8 +40,8 @@ import ServiceCart from "../Pages/Service/ServiceCart";
             element : <SignUp></SignUp>
         },
         {
-            path : "service/:id",
-            element : <ServiceCart/>,
+            path : "service/:_id",
+            element : <ServiceDetails></ServiceDetails>,
             loader : () => fetch('../serviceData.json')
         },
       ],

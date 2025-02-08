@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import CartTitle from "./CartTitle";
+import { Link } from "react-router-dom";
 
 const ServiceCart = () => {
   const [serviceCartData, setServiceCartData] = useState([]);
-  console.log(serviceCartData.length);
   
   useEffect(() =>{
       fetch('./serviceData.json')
@@ -19,7 +19,8 @@ const ServiceCart = () => {
       <div className="md:max-w-7xl md:mx-auto grid grid-cols-1 lg:grid-cols-6 md:gap-4 gap-2 p-2 md:p-0  md:px-0 px-2">
         {/* Service Cards */}
        {serviceCartData.map((service, index) => (
-          <div
+         <Link to={`/service/${service._id}`} key={index}>
+           <div
             key={index}
             className="bg-white border h-90 border-gray-200 rounded-lg shadow-lg overflow-hidden transform transition-transform duration-300 hover:scale-105 hover:shadow-2xl hover:bg-[#C73450] hover:text-white group"
           >
@@ -43,6 +44,7 @@ const ServiceCart = () => {
               </div>
             </div>
           </div>
+         </Link>
         ))}
       </div>
     </div>
