@@ -26,7 +26,7 @@ const AboutAndTeam = () => {
                             viewport={{ once: true }}
                             className="text-2xl font-extrabold md:text-5xl lg:text-4xl 
                    bg-gradient-to-r from-[#C73450] to-red-600 text-transparent 
-                   bg-clip-text drop-shadow-lg"
+                   bg-clip-text"
                         >
                           Why Choose Social Verb?
                         </motion.h2>
@@ -81,7 +81,7 @@ const AboutAndTeam = () => {
                             viewport={{ once: true }}
                             className="text-2xl font-extrabold md:text-5xl lg:text-4xl 
                    bg-gradient-to-r from-[#C73450] to-red-600 text-transparent 
-                   bg-clip-text drop-shadow-lg"
+                   bg-clip-text"
                         >
                          Meet Our Creative Minds
                         </motion.h2>
@@ -93,7 +93,7 @@ const AboutAndTeam = () => {
                     {/* Learn More Button */}
                     <Link to="/our-team">
                     <button className="mt-6 text-[#DD0429] font-semibold text-lg relative group">
-                         About Our Team
+                         Our Team
                         <span className="absolute left-0 bottom-0 w-0 h-[2px] bg-[#C73450] transition-all duration-300 group-hover:w-full"></span>
                     </button>
                     </Link>

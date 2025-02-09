@@ -1,11 +1,11 @@
-import { FiSend } from "react-icons/fi";
+// import { FiSend } from "react-icons/fi";
 import { Link } from "react-router-dom";
 
 const NeumorphismButton = () => {
 
   return (
     <div>
-         <Link to="/login"><button 
+         <Link><button 
           className={`
        px-4 py-2 rounded-full 
        flex items-center gap-2 
@@ -18,8 +18,8 @@ const NeumorphismButton = () => {
        hover:text-[#C73450]
    `}
         >
-          <FiSend />
-          <span>Sign In</span>
+          {/* <FiSend /> */}
+          <span>contact</span>
         </button></Link>   
 
     </div>

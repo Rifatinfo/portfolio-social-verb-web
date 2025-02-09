@@ -19,7 +19,7 @@ const BlogSectionTitle = () => {
             viewport={{ once: true }}
             className="text-2xl font-extrabold md:text-5xl lg:text-4xl 
                    bg-gradient-to-r from-[#C73450] to-red-600 text-transparent 
-                   bg-clip-text drop-shadow-lg"
+                   bg-clip-text"
           >
             Blogs & News
           </motion.h2>
