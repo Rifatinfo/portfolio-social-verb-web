@@ -1,6 +1,7 @@
 import { RiArrowDownSLine } from "react-icons/ri";
 import { motion } from "framer-motion";
-
+import PlayButton from "../Video/PlayButton";
+import Pagination from "../Portfolio/Pagination";
 
 const ServicePricing = () => {
     return (
@@ -8,34 +9,34 @@ const ServicePricing = () => {
             <div className="max-w-7xl mx-auto mb-16 text-start">
                 {/* <span className="font-bold tracking-wider uppercase text-[#C73450]"></span>
                 <h2 className="text-2xl font-bold lg:text-5xl text-[#C73450]"></h2> */}
-                 <motion.div
-          initial={{ opacity: 0, x: -50 }}
-          whileInView={{ opacity: 1, x: 0 }}
-          transition={{ duration: 0.6, ease: "easeOut" }}
-          viewport={{ once: true }}
-          className="border-l-[5px] border-[#C73450] pl-5"
-        >
-          <motion.h2
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="text-2xl font-extrabold md:text-5xl lg:text-4xl 
+                <motion.div
+                    initial={{ opacity: 0, x: -50 }}
+                    whileInView={{ opacity: 1, x: 0 }}
+                    transition={{ duration: 0.6, ease: "easeOut" }}
+                    viewport={{ once: true }}
+                    className="border-l-[5px] border-[#C73450] pl-5"
+                >
+                    <motion.h2
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        className="text-2xl font-extrabold md:text-5xl lg:text-4xl 
                    bg-gradient-to-r from-[#C73450] to-red-600 text-transparent 
                    bg-clip-text"
-          >
-          Choose Your Best Plan
-          </motion.h2>
-          <motion.p
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
-            viewport={{ once: true }}
-            className="text-sm font-medium text-body-color dark:text-dark-6 mt-2"
-          >
-            Pricing
-          </motion.p>
-        </motion.div>
+                    >
+                        Choose Your Best Plan
+                    </motion.h2>
+                    <motion.p
+                        initial={{ opacity: 0, y: 30 }}
+                        whileInView={{ opacity: 1, y: 0 }}
+                        transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        className="text-sm font-medium text-body-color dark:text-dark-6 mt-2"
+                    >
+                        Pricing
+                    </motion.p>
+                </motion.div>
             </div>
             <div className="grid grid-cols-1 gap-2 md:flex md:gap-4 md:px-0 px-1 mt-20">
                 <div className="w-full md:w-1/6 ">
@@ -164,16 +165,16 @@ const ServicePricing = () => {
                     </div>
                 </div>
                 <div className="w-full md:w-5/6">
-                    <div className="grid grid-cols-1 gap-3 md:grid-cols-3 md:grid-12 md:px-0 px-6">
+                    <div className="grid grid-cols-1 gap-2 md:grid-cols-4 md:grid-3 md:px-0 px-2 ">
 
-                        <div className="flex w-full mb-8 sm:px-4  lg:mb-0">
-                            <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-50">
+                        <div className="flex w-full mb-8 lg:mb-0 ">
+                            <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8">
                                 <div className="space-y-2">
                                     <h4 className="text-2xl font-bold">Beginner</h4>
                                     <span className="text-6xl font-bold text-[#C73450]">Free</span>
                                 </div>
-                                <p className="mt-3 leading-relaxed dark:text-gray-600">Etiam ac convallis enim, eget euismod dolor.</p>
-                                <ul className="flex-1 mb-6 dark:text-gray-600">
+                                <p className="mt-3 leading-relaxed ">Etiam ac convallis enim, eget euismod dolor.</p>
+                                <ul className="flex-1 mb-6">
                                     <li className="flex mb-2 space-x-2">
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="flex-shrink-0 w-6 h-6 dark:text-violet-600">
                                             <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
@@ -196,7 +197,7 @@ const ServicePricing = () => {
                                 <button type="button" className="border-[#C73450] border-2  inline-block px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-violet-600 dark:text-gray-50">Get Started</button>
                             </div>
                         </div>
-                        <div className="flex w-full mb-8 sm:px-4  lg:mb-0">
+                        <div className="flex w-full mb-8  lg:mb-0 ">
                             <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-violet-600 dark:text-gray-50">
                                 <div className="space-y-2">
                                     <h4 className="text-2xl font-bold">Pro</h4>
@@ -234,7 +235,7 @@ const ServicePricing = () => {
                                 <a rel="noopener noreferrer" href="#" className="border bg-[#C73450] text-white inline-block w-full px-5 py-3 font-bold tracking-wider text-center rounded dark:bg-gray-100 ">Get Started</a>
                             </div>
                         </div>
-                        <div className="flex w-full mb-8 sm:px-4 lg:mb-0">
+                        <div className="flex w-full mb-8 lg:mb-0 ">
                             <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-50">
                                 <div className="space-y-2">
                                     <h4 className="text-2xl font-bold">Team</h4>
@@ -278,11 +279,203 @@ const ServicePricing = () => {
                                 <a rel="noopener noreferrer" href="#" className="border-[#C73450] border-2 inline-block w-full px-5 py-3 font-semibold tracking-wider text-center rounded  dark:text-gray-50">Get Started</a>
                             </div>
                         </div>
+                        <div className="flex w-full mb-8   lg:mb-0 ">
+                            <div className="flex flex-grow flex-col p-6 space-y-6 rounded shadow sm:p-8 dark:bg-gray-50">
+                                <div className="space-y-2">
+                                    <h4 className="text-2xl font-bold">Beginner</h4>
+                                    <span className="text-6xl font-bold text-[#C73450]">Free</span>
+                                </div>
+                                <p className="mt-3 leading-relaxed dark:text-gray-600">Etiam ac convallis enim, eget euismod dolor.</p>
+                                <ul className="flex-1 mb-6 dark:text-gray-600">
+                                    <li className="flex mb-2 space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="flex-shrink-0 w-6 h-6 dark:text-violet-600">
+                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                                        </svg>
+                                        <span>Aenean quis</span>
+                                    </li>
+                                    <li className="flex mb-2 space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="flex-shrink-0 w-6 h-6 dark:text-violet-600">
+                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                                        </svg>
+                                        <span>Morbi semper</span>
+                                    </li>
+                                    <li className="flex mb-2 space-x-2">
+                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 20 20" fill="currentColor" className="flex-shrink-0 w-6 h-6 dark:text-violet-600">
+                                            <path fillRule="evenodd" d="M10 18a8 8 0 100-16 8 8 0 000 16zm3.707-9.293a1 1 0 00-1.414-1.414L9 10.586 7.707 9.293a1 1 0 00-1.414 1.414l2 2a1 1 0 001.414 0l4-4z" clipRule="evenodd"></path>
+                                        </svg>
+                                        <span>Tristique enim nec</span>
+                                    </li>
+                                </ul>
+                                <button type="button" className="border-[#C73450] border-2  inline-block px-5 py-3 font-semibold tracking-wider text-center rounded dark:bg-violet-600 dark:text-gray-50">Get Started</button>
+                            </div>
+                        </div>
 
                     </div>
 
+                    {/* work show case video  */}
+                    <div>
+                        <motion.div
+                            initial={{ opacity: 0, x: -50 }}
+                            whileInView={{ opacity: 1, x: 0 }}
+                            transition={{ duration: 0.6, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                            className="border-l-[5px] border-[#C73450] pl-5"
+                        >
+                            <motion.h2
+                                initial={{ opacity: 0, y: 30 }}
+                                whileInView={{ opacity: 1, y: 0 }}
+                                transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+                                viewport={{ once: true }}
+                                className="text-2xl font-extrabold md:text-5xl lg:text-4xl 
+                   bg-gradient-to-r from-[#C73450] to-red-600 text-transparent 
+                   bg-clip-text md:mt-10 md:mb-4 mt-4 mb-2"
+                            >
+                                Showcase
+                            </motion.h2>
+                        </motion.div>
+                        <div className="grid grid-cols-1 gap-3 md:grid-cols-4 md:grid-3 md:px-0 px-6 ">
+                            <div>
+                                <div className="relative md:-space-y-5.5 space-y-2">
+                                    <figure className="h-[174px]">
+                                        <img
+                                            className="rounded-2xl"
+                                            src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="">
+                                        <p className="text-lg font-semibold">A card component has  </p>
+                                        <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
+                                    </div>
+                                </div>
+
+                                {/* play button */}
+                                <PlayButton></PlayButton>
+                            </div>
+                            <div>
+                                <div className="relative md:-space-y-5.5 space-y-2">
+                                    <figure className="h-[174px]">
+                                        <img
+                                            className="rounded-2xl"
+                                            src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="">
+                                        <p className="text-lg font-semibold">A card component has  </p>
+                                        <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
+                                    </div>
+                                </div>
+
+                                {/* play button */}
+                                <PlayButton></PlayButton>
+                            </div>
+                            <div>
+                                <div className="relative md:-space-y-5.5 space-y-2">
+                                    <figure className="h-[174px]">
+                                        <img
+                                            className="rounded-2xl"
+                                            src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="">
+                                        <p className="text-lg font-semibold">A card component has  </p>
+                                        <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
+                                    </div>
+                                </div>
+
+                                {/* play button */}
+                                <PlayButton></PlayButton>
+                            </div>
+                            <div>
+                                <div className="relative md:-space-y-5.5 space-y-2">
+                                    <figure className="h-[174px]">
+                                        <img
+                                            className="rounded-2xl"
+                                            src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="">
+                                        <p className="text-lg font-semibold">A card component has  </p>
+                                        <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
+                                    </div>
+                                </div>
+
+                                {/* play button */}
+                                <PlayButton></PlayButton>
+                            </div>
+                            <div>
+                                <div className="relative md:-space-y-5.5 space-y-2">
+                                    <figure className="h-[174px]">
+                                        <img
+                                            className="rounded-2xl"
+                                            src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="">
+                                        <p className="text-lg font-semibold">A card component has  </p>
+                                        <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
+                                    </div>
+                                </div>
+
+                                {/* play button */}
+                                <PlayButton></PlayButton>
+                            </div>
+                            <div>
+                                <div className="relative md:-space-y-5.5 space-y-2">
+                                    <figure className="h-[174px]">
+                                        <img
+                                            className="rounded-2xl"
+                                            src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="">
+                                        <p className="text-lg font-semibold">A card component has  </p>
+                                        <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
+                                    </div>
+                                </div>
+
+                                {/* play button */}
+                                <PlayButton></PlayButton>
+                            </div>
+                            <div>
+                                <div className="relative md:-space-y-5.5 space-y-2">
+                                    <figure className="h-[174px]">
+                                        <img
+                                            className="rounded-2xl"
+                                            src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="">
+                                        <p className="text-lg font-semibold">A card component has  </p>
+                                        <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
+                                    </div>
+                                </div>
+
+                                {/* play button */}
+                                <PlayButton></PlayButton>
+                            </div>
+                            <div>
+                                <div className="relative md:-space-y-5.5 space-y-2">
+                                    <figure className="h-[174px]">
+                                        <img
+                                            className="rounded-2xl"
+                                            src="https://i.ytimg.com/vi/2vbqO9xsRao/hqdefault.jpg?sqp=-oaymwEnCNACELwBSFryq4qpAxkIARUAAIhCGAHYAQHiAQoIGBACGAY4AUAB&rs=AOn4CLDLIh1QFFTVKJFrhQttZn4X0sPI7A"
+                                            alt="Shoes" />
+                                    </figure>
+                                    <div className="">
+                                        <p className="text-lg font-semibold">A card component has  </p>
+                                        <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
+                                    </div>
+                                </div>
+
+                                {/* play button */}
+                                <PlayButton></PlayButton>
+                            </div>
+                        </div>
+                    </div>
                 </div>
             </div>
+             {/* pagination  */}
+             <Pagination/>
         </div>
     );
 };

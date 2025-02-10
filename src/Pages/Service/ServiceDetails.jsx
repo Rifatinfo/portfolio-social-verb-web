@@ -88,7 +88,7 @@ const ServiceDetails = () => {
             {/* pricing */}
             <ServicePricing />
             {/* <ClientsSlider /> */}
-            <Portfolio loadData={loadData} />
+            {/* <Portfolio loadData={loadData} /> */}
 
             {/* frequently asked */}
             <div className="mt-14">

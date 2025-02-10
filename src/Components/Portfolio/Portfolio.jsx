@@ -180,7 +180,7 @@ const Portfolio = ({ loadData }) => {
 
                             {/* play button */}
                             <PlayButton></PlayButton>
-                        </div>
+                  </div>
                   </Link>
                 </div>)
               }
