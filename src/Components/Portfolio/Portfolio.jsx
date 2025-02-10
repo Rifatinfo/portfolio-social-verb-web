@@ -1,14 +1,12 @@
-// import lo from '../../../public/logo.svg';
-// import { RiArrowDownSLine } from "react-icons/ri";
-// import { FiSend } from "react-icons/fi";
-// import Video from "../Video/Video";
+
 import { useState } from "react";
-import { motion } from "framer-motion";
 import { Link } from "react-router-dom";
 import PageTitle2 from "../PageTitle2/PageTitle2";
 import PlayButton from "../Video/PlayButton";
 import { RiArrowDownSLine } from "react-icons/ri";
 import Pagination from "./Pagination";
+
+
 const Portfolio = ({ loadData }) => {
   const [AllProduct, setAllProduct] = useState(loadData);
   const [productToShow, setProductToShow] = useState(8);
@@ -19,7 +17,7 @@ const Portfolio = ({ loadData }) => {
       setProductToShow(previousProductToShow => previousProductToShow + 8);
     }
   }
-
+  console.log(setAllProduct, loadMoreProducts);
   return (
     <div className="md:max-w-7xl md:mx-auto">
       <div>

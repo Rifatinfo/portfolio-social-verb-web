@@ -17,9 +17,6 @@ const TestimonialSlide = () => {
             <Swiper
                 slidesPerView={1}
                 spaceBetween={6}
-                pagination={{
-                    clickable: true,
-                }}
                 autoplay={{
                     delay: 2500,
                     disableOnInteraction: false,
