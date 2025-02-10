@@ -1,9 +1,11 @@
 import { useLoaderData, useParams } from "react-router-dom";
 import { FaArrowRightLong } from "react-icons/fa6";
 import ReactPlayer from "react-player";
-import { RiArrowDownSLine } from "react-icons/ri";
+// import { RiArrowDownSLine } from "react-icons/ri";
 import ClientsSlider from "../../Components/OurClients/ClientsSlider";
 import ServicePricing from "../../Components/ServicePricing/ServicePricing";
+import { IoIosArrowForward } from "react-icons/io";
+import { motion } from "framer-motion";
 
 const ServiceDetails = () => {
     const { _id } = useParams();
@@ -13,8 +15,12 @@ const ServiceDetails = () => {
 
     return (
         <div className="mt-[74px]  max-w-7xl mx-auto">
-            <h2 className="font-semibold text-xl text-gray-400">Home > Digital Marketing</h2>
-
+            
+             <div className="flex gap-1 items-center">
+                <p className="text-gray-400 font-semibold">Home</p>
+             <h2 className="font-semibold text-xl text-gray-400"><IoIosArrowForward className="text-gray-400" /></h2>
+            <p className="text-gray-400 font-semibold">Digital Marketing</p>
+             </div>
             <div className=" grid grid-cols-1  gap-4 md:flex  md:justify-between ">
                 <div className="mt-[50px]  space-y-6">
                     <p className="md:text-3xl text-lg text-[#C73450] font-bold">Social Media Marketing</p>
@@ -79,6 +85,26 @@ const ServiceDetails = () => {
             {/* service description  */}
             <div className="mt-14">
                 <div className="w-full">
+                    {/* title of frequently asked  */}
+                    <motion.div
+                        initial={{ opacity: 0, x: -50 }}
+                        whileInView={{ opacity: 1, x: 0 }}
+                        transition={{ duration: 0.6, ease: "easeOut" }}
+                        viewport={{ once: true }}
+                        className="border-l-[5px] border-[#C73450] pl-5"
+                    >
+                        <motion.h2
+                            initial={{ opacity: 0, y: 30 }}
+                            whileInView={{ opacity: 1, y: 0 }}
+                            transition={{ duration: 0.5, delay: 0.2, ease: "easeOut" }}
+                            viewport={{ once: true }}
+                            className="text-2xl mb-10 font-extrabold md:text-5xl lg:text-4xl 
+                   bg-gradient-to-r from-[#C73450] to-red-600 text-transparent 
+                   bg-clip-text"
+                        >
+                          Frequently Asked Questions
+                        </motion.h2>
+                    </motion.div>
                     <div className="join join-vertical bg-base-100 md:w-3/4 w-full">
                         <div className="collapse collapse-arrow join-item border-base-300 border">
                             <input type="radio" name="my-accordion-4" defaultChecked />

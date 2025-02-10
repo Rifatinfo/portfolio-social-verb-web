@@ -50,7 +50,7 @@ const AboutAndTeam = () => {
                     <img
                         src="https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2019/10/features-img-1.png"
                         alt="Why Choose Us"
-                        className="w-full md:w-[400px] rounded-lg shadow-lg"
+                        className="w-full md:w-[400px] rounded-lg"
                     />
                 </motion.div>
             </div>
@@ -64,7 +64,7 @@ const AboutAndTeam = () => {
                     <img
                         src="https://axilthemes.com/themes/cynic/illustrated-small-digital-agency/wp-content/uploads/2019/10/features-img-2.png"
                         alt="Our Team"
-                        className="w-full md:w-[400px] rounded-lg shadow-lg"
+                        className="w-full md:w-[400px] rounded-lg"
                     />
                 </motion.div>
 

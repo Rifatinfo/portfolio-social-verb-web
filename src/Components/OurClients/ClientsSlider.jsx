@@ -40,7 +40,7 @@ const ClientsSlider = () => {
                         spaceBetween: 30,
                     },
                     1280: {
-                        slidesPerView: 8, // Show 10 slides in view
+                        slidesPerView: 10, // Show 10 slides in view
                         spaceBetween: 20,
                     },
                 }}
