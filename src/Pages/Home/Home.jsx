@@ -7,6 +7,8 @@ import AboutAndTeam from "../../Components/AboutAndTeam/AboutAndTeam";
 import HomePageVideo from '../../Components/HomePageVideo/HomePageVideo';
 import TestimonialSlide from '../../Components/Testimonials/TestimonialSlide';
 import ServiceCart from '../Service/ServiceCart';
+import ContactPage from '../../Components/Contact/ContactPage';
+
 
 
 const Home = () => {

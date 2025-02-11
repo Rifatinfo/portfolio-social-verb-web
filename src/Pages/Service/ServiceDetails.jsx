@@ -3,7 +3,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 import ReactPlayer from "react-player";
 import ServicePricing from "../../Components/ServicePricing/ServicePricing";
 import { IoIosArrowForward } from "react-icons/io";
-import Portfolio from "../../Components/Portfolio/Portfolio";
+// import Portfolio from "../../Components/Portfolio/Portfolio";
 import { motion } from "framer-motion";
 
 const ServiceDetails = () => {

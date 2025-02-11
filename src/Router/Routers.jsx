@@ -10,6 +10,7 @@ import Login from "../Pages/Login/Login";
 import SignUp from "../Pages/Login/SignUp";
 // import ServiceCart from "../Pages/Service/ServiceCart";
 import ServiceDetails from "../Pages/Service/ServiceDetails";
+import ContactPage from "../Components/Contact/ContactPage";
 
   const router = createBrowserRouter([
     {
@@ -38,6 +39,10 @@ import ServiceDetails from "../Pages/Service/ServiceDetails";
         {
             path : "/signup",
             element : <SignUp></SignUp>
+        },
+        {
+            path : "/contact",
+            element : <ContactPage/>
         },
         {
             path : "service/:_id",

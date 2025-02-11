@@ -5,7 +5,7 @@ const NeumorphismButton = () => {
 
   return (
     <div>
-         <Link><button 
+         <Link to="/contact"><button 
           className={`
        px-4 py-2 rounded-full 
        flex items-center gap-2 

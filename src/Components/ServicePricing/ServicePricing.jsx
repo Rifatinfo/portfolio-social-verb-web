@@ -483,31 +483,7 @@ const ServicePricing = () => {
 export default ServicePricing;
 
 
-//  <div className=" md:w-3/4 w-full ">
-//     <section className="py-20 dark:bg-gray-100 dark:text-gray-800">
-//         <div>
-
-//             <div className="max-w-2xl mx-auto mb-16 text-center">
-//                 <span className="font-bold tracking-wider uppercase text-[#C73450]">Pricing</span>
-//                 <h2 className="text-2xl font-bold lg:text-5xl text-[#C73450]">Choose your best plan</h2>
-//             </div>
-
-//             <div className="text-center mb-10">
-//                 <button className="px-4 py-1 font-semibold border-2 rounded-l-lg bg-[#C73450] text-white border-[#C73450]">
-//                     Monthly
-//                 </button>
-//                 <button className="px-4 py-1  rounded-r-lg  text-black border-2 border-[#C73450]">
-//                     Annually
-//                 </button>
-//             </div>
 
 
 
-//             <div className="flex flex-wrap items-stretch -mx-4">
 
-//             </div>
-//         </div>
-//     </section>
-
-
-// </div> 
