@@ -6,7 +6,7 @@ import { Play } from "lucide-react";
 const PlayButton = () => {
   return (
    <div>
-    <div className="absolute z-10 -mt-43 ml-26">
+    <div className="absolute z-10 md:-mt-43 md:ml-26 -mt-50 ml-28">
         <motion.button
           whileHover={{ scale: 1.1, boxShadow: "0px 0px 15px rgba(255, 0, 0, 0.7)" }} // Glowing shadow on hover
           whileTap={{ scale: 0.95 }} // Press effect

@@ -3,13 +3,38 @@ import { IoMenu } from "react-icons/io5";
 import { IoClose } from "react-icons/io5";
 import NeumorphismButton from "../Components/NeumorphismButton";
 import logo from '../assets/Logo.png'
-import { Link } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import { ScrollContext } from "../../ScrollProvider";
+import { scroller } from "react-scroll";
 const Navbar = () => {
-  
-  const { servicesRef, scrollToSection, PortfolioRef, AboutRef, ContactRef} = useContext(ScrollContext);
+
+  const { servicesRef, scrollToSection, PortfolioRef, AboutRef, ContactRef } = useContext(ScrollContext);
   const [open, setOpen] = useState(false);
 
+  const location = useLocation();
+  const navigate = useNavigate();
+
+  const handleNavClick = (sectionId) => {
+    if (location.pathname !== "/") {
+      // Navigate to home first, then scroll to section
+      navigate("/", { replace: true });
+
+      setTimeout(() => {
+        scroller.scrollTo(sectionId, {
+          duration: 800,
+          smooth: "easeInOutQuart",
+          offset: -50, // Adjust for fixed navbar
+        });
+      }, 500);
+    } else {
+      // Scroll to section directly if already on home page
+      scroller.scrollTo(sectionId, {
+        duration: 800,
+        smooth: "easeInOutQuart",
+        offset: -50,
+      });
+    }
+  };
 
   return (
     <div className="bg-gray-100">
@@ -23,15 +48,16 @@ const Navbar = () => {
 
             {/* Desktop Menu */}
             <ul className="hidden md:flex items-center space-x-6  font-medium text-[#C73450] ">
-              <li onClick={() => scrollToSection(AboutRef)} className="cursor-pointer transition-colors duration-300" >About</li>
-              <li onClick={() => scrollToSection(servicesRef)} className="cursor-pointer transition-colors duration-300" >Service</li>
-              <li onClick={() => scrollToSection(PortfolioRef)} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
-              <li onClick={() => scrollToSection(ContactRef)} className="cursor-pointer transition-colors duration-300" >Blogs</li>
-              <li className="cursor-pointer transition-colors duration-300" >Status</li>
+              <li onClick={() => handleNavClick("home")} className="cursor-pointer transition-colors duration-300" >Home</li>
+              <li onClick={() => handleNavClick("about")} className="cursor-pointer transition-colors duration-300" >About</li>
+              <li onClick={() => handleNavClick("services")} className="cursor-pointer transition-colors duration-300" >Service</li>
+              <li onClick={() => handleNavClick("portfolio")} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
+              <li onClick={() => handleNavClick("blog")} className="cursor-pointer transition-colors duration-300" >Blogs</li>
+              {/* <li className="cursor-pointer transition-colors duration-300" >Status</li> */}
             </ul>
             <div className="hidden md:flex items-center gap-6 ">
               <NeumorphismButton></NeumorphismButton>
-              
+
             </div>
 
             {/* Mobile Menu Button */}
@@ -57,11 +83,11 @@ const Navbar = () => {
             />
           </div>
           <ul className="flex flex-col items-center space-y-4 pt-10 text-gray-700 font-medium">
-            <li onClick={() => { scrollToSection(AboutRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >About</li>
-            <li onClick={() => { scrollToSection(servicesRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Service</li>
-            <li onClick={() => { scrollToSection(PortfolioRef); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
-            <li onClick={() => scrollToSection(ContactRef)} className="cursor-pointer transition-colors duration-300" >Blogs</li>
-            <li className="cursor-pointer transition-colors duration-300" >Status</li>
+            <li onClick={() => {handleNavClick("home"); setOpen(false)}} className="cursor-pointer transition-colors duration-300" >Home</li>
+            <li onClick={() => { handleNavClick("about"); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >About</li>
+            <li onClick={() => { handleNavClick("services"); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Service</li>
+            <li onClick={() => { handleNavClick("portfolio"); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Portfolio</li>
+            <li onClick={() => { handleNavClick("blog"); setOpen(false) }} className="cursor-pointer transition-colors duration-300" >Blogs</li>
             <div>
               <NeumorphismButton></NeumorphismButton>
             </div>

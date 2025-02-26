@@ -3,7 +3,7 @@
 const Pagination = () => {
     return (
         <div>
-            <div className="flex justify-center space-x-1  mt-6">
+            <div className="flex justify-center space-x-1  mt-6 mb-6">
                 {/* Previous Button */}
                 <button title="Previous" type="button"
                     className="inline-flex items-center justify-center w-8 h-8 py-0 border rounded-md shadow-md border-[#C73450] text-[#C73450] hover:bg-[#C73450] hover:text-white transition-all">

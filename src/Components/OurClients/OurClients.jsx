@@ -20,10 +20,10 @@ const OurClients = () => {
                 <ClientsSection></ClientsSection>
             </div>
             <div className='grid grid-cols-3 gap-2 md:grid-cols-10 lg:grid-cols-10'>
-                <div className="rounded-lg relative flex items-center justify-center p-2 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
+                <div className="rounded-lg relative flex items-center justify-center p-8 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
                     <img src={clients2} alt="Cart" className=" transform hover:scale-110 transition-transform duration-300 ease-in-out" />
                 </div>
-                <div className="rounded-lg relative flex items-center justify-center  p-2 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
+                <div className="rounded-lg relative flex items-center justify-center  p-8 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
                     <img src={clients3} alt="Cart" className=" transform hover:scale-110 transition-transform duration-300 ease-in-out" />
                 </div>
                 <div className="rounded-lg relative flex items-center justify-center p-8  hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
@@ -58,10 +58,10 @@ const OurClients = () => {
                 </div>
 
                 {/* repeat  */}
-                <div className="rounded-lg relative flex items-center justify-center p-2 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
+                <div className="rounded-lg relative flex items-center justify-center p-8 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
                     <img src={clients2} alt="Cart" className=" transform hover:scale-110 transition-transform duration-300 ease-in-out" />
                 </div>
-                <div className="rounded-lg relative flex items-center justify-center  p-2 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
+                <div className="rounded-lg relative flex items-center justify-center  p-8 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
                     <img src={clients3} alt="Cart" className=" transform hover:scale-110 transition-transform duration-300 ease-in-out" />
                 </div>
                 <div className="rounded-lg relative flex items-center justify-center p-8  hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
@@ -94,10 +94,10 @@ const OurClients = () => {
                 <div className="rounded-lg relative flex items-center justify-center p-8  hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
                     <img src={clients1} alt="Cart" className=" transform hover:scale-110 transition-transform duration-300 ease-in-out" />
                 </div>
-                <div className="rounded-lg relative flex items-center justify-center p-2 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
+                <div className="rounded-lg relative flex items-center justify-center p-8 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
                     <img src={clients2} alt="Cart" className=" transform hover:scale-110 transition-transform duration-300 ease-in-out" />
                 </div>
-                <div className="rounded-lg relative flex items-center justify-center  p-2 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
+                <div className="rounded-lg relative flex items-center justify-center  p-8 hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">
                     <img src={clients3} alt="Cart" className=" transform hover:scale-110 transition-transform duration-300 ease-in-out" />
                 </div>
                 <div className="rounded-lg relative flex items-center justify-center p-8  hover:bg-gray-100 transition-all duration-300 ease-in-out shadow-lg">

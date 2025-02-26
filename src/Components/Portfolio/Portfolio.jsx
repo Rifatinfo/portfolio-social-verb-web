@@ -160,7 +160,7 @@ const Portfolio = ({ loadData }) => {
             </div>
           </div>
           <div className="w-full md:w-5/6">
-            <div className="grid grid-cols-1 gap-3 md:grid-cols-4 md:grid-12 md:px-0 px-6">
+            <div className="grid grid-cols-1 gap-3 md:grid-cols-4 md:grid-12">
               {
                 AllProduct.slice(0, productToShow).map(singleItem => <div key={singleItem.id}>
                   <Link to={`/video/${singleItem.id}`}>
@@ -173,7 +173,7 @@ const Portfolio = ({ loadData }) => {
                                 alt="Shoes" />
                             </figure>
                             <div className="">
-                                <p className="text-lg font-semibold">A card component has  </p>
+                                <p className="text-lg font-semibold  mt-1  md:mt-0">A card component has  </p>
                                 <p className="mb-2"><span className="font-semibold">Brand :</span> component </p>
                             </div>
                             </div>

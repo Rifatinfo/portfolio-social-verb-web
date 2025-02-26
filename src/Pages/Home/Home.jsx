@@ -7,7 +7,6 @@ import AboutAndTeam from "../../Components/AboutAndTeam/AboutAndTeam";
 import HomePageVideo from '../../Components/HomePageVideo/HomePageVideo';
 import TestimonialSlide from '../../Components/Testimonials/TestimonialSlide';
 import ServiceCart from '../Service/ServiceCart';
-import ContactPage from '../../Components/Contact/ContactPage';
 
 
 
@@ -15,17 +14,25 @@ const Home = () => {
     const loadData = useLoaderData();
     console.log(loadData)
 
-    
+
     return (
-        <div>
+        <div id="home">
             <HomePageVideo></HomePageVideo>
-            <ServiceCart/>
-            <Portfolio loadData={loadData}></Portfolio>
-             <OurClients></OurClients>
-             <Counting></Counting>
-             <AboutAndTeam></AboutAndTeam>
+            <div id="services">
+                <ServiceCart />
+            </div>
+            <div  id="portfolio">
+                <Portfolio loadData={loadData}></Portfolio>
+            </div>
+            <OurClients></OurClients>
+            <Counting></Counting>
+            <div id="about">
+                <AboutAndTeam></AboutAndTeam>
+            </div>
             <TestimonialSlide></TestimonialSlide>
-            <BlogSection></BlogSection>
+            <div id="blog">
+                <BlogSection></BlogSection>
+            </div>
         </div>
     );
 };
